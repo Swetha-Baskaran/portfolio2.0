@@ -1,0 +1,84 @@
+.about-hold{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    padding: 1rem 1.5rem 3rem 1.5rem;
+    .about-me{
+      flex: 50%;
+      margin: 3rem 0 3rem 3rem;
+      .about-heading{
+        transform: translateY(-37px);
+    }
+      .about-content{
+        padding: 0 0 1rem 0;
+        text-align: justify;
+      }
+      .design{
+        width: 100%;
+        position: relative;
+        height: 3px;
+        background-color: rebeccapurple;
+        margin-top: 4rem;    
+        &::before{
+            content: "";
+            width: 1.7rem;
+            height: 1.7rem;
+            position: absolute;
+            background: rebeccapurple;
+            border-radius: 50%;
+            transform: translate(-3px, -12px);
+        }
+      }
+    }
+    .qualification{
+        flex: 50%;
+        padding: 2rem;
+       .description{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         .icon{
+            font-size: 5rem;
+            margin: 2rem 2rem 2rem 0;
+         }
+       }
+    }
+}
+
+@media (max-width: 850px){
+    .about-hold{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 3rem 0;
+        .qualification{
+            padding: 1rem 2rem 2rem 2rem;
+            .description{
+                .icon{
+                    font-size: 4rem;
+                    margin: 0 2rem 0 0;
+                }
+            }
+            .design{
+                width: 100%;
+                position: relative;
+                height: 3.6px;
+                background-color: rebeccapurple;
+                margin-top: 4rem;    
+                &::before{
+                    content: "";
+                    width: 1.7rem;
+                    height: 1.7rem;
+                    position: absolute;
+                    background: rebeccapurple;
+                    border-radius: 50%;
+                    right: 0;
+                    transform: translate(3px, -12px);
+                }
+              }
+        }
+        .about-me{
+            margin: 2rem;
+        }
+    }
+}

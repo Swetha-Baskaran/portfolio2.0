@@ -1,0 +1,66 @@
+import Divider from "@mui/material/Divider";
+import Stack from "@mui/material/Stack";
+import classes from "./style.module.scss";
+import { BsLinkedin, BsInstagram, BsTwitter, BsGithub } from "react-icons/bs";
+
+const Footer = () => {
+	return (
+		<>
+			<div className={classes["footer"]}>
+				{/* <img src='/assets/svg-path.png' alt='' /> */}
+				<div className={classes["footer-content"]}>
+					<img
+						alt='mypic'
+						className={classes["my-pic"]}
+						src='/assets/me.png'
+					/>
+					<div className={classes["content"]}>
+						<div className={classes["text"]}>
+							<h1>Have any idea ?</h1>
+							<p>discuss with me</p>
+						</div>
+            <div className={classes["icon-hold"]}>
+               <div className={classes["icon"]}><BsLinkedin /></div>
+               <div className={classes["icon"]}><BsGithub /></div>
+               <div className={classes["icon"]}><BsInstagram /></div>
+               <div className={classes["icon"]}><BsTwitter /></div>
+            </div>
+					</div>
+					<div className={classes["bottom-nav"]}>
+						<Stack
+							direction='row'
+							style={customStyle.bottomNav}
+							divider={
+								<Divider
+									orientation='vertical'
+									color='inherit'
+									style={customStyle.divider}
+									flexItem
+								/>
+							}
+							spacing={5}>
+							<div className={classes["navs"]}>Home</div>
+							<div className={classes["navs"]}>About</div>
+							<div className={classes["navs"]}>Skills</div>
+							<div className={classes["navs"]}>Project</div>
+							<div className={classes["navs"]}>Contact</div>
+						</Stack>
+					</div>
+				</div>
+				<div className={classes["next-js"]}>created using next js</div>
+			</div>
+		</>
+	);
+};
+
+const customStyle = {
+	bottomNav: {
+		width: "100%",
+		textAlign: "center",
+		justifyContent: "center",
+		padding: "1rem 0 2rem 0",
+	},
+	divider: {},
+};
+
+export default Footer;
