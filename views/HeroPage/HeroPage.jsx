@@ -1,20 +1,19 @@
 import { useCallback } from "react";
 import classes from "./style.module.scss";
-import Particles from "react-tsparticles";
+// import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
-import particleData from "../../data.json";
-import devImg from "../../assets/devImage.png";
-import Image from "next/image";
+// import particleData from "../../data.json";
+// import Image from "next/image";
 
 const HeroPage = () => {
-	const particlesInit = useCallback(async engine => {
-		console.log(engine);
-		await loadFull(engine);
-	}, []);
+	// const particlesInit = useCallback(async engine => {
+	// 	console.log(engine);
+	// 	await loadFull(engine);
+	// }, []);
 
-	const particlesLoaded = useCallback(async container => {
-		await console.log(container);
-	}, []);
+	// const particlesLoaded = useCallback(async container => {
+	// 	await console.log(container);
+	// }, []);
 	return (
 		<>
 			<div className={classes["header"]}>
@@ -52,7 +51,7 @@ const HeroPage = () => {
 						</h3>
 					</section>
 					<section>
-						<Image src={devImg} alt="" />
+						{/* <Image src={devImg} alt="" /> */}
 					</section>
 				</div>
 			</div>
