@@ -9,11 +9,11 @@ const Footer = () => {
 		<>
 			<div className={classes["footer"]}>
 				<div className={classes["footer-content"]}>
-					<img
+					{/* <img
 						alt='mypic'
 						className={classes["my-pic"]}
 						src='/assets/me.png'
-					/>
+					/> */}
 					<div className={classes["content"]}>
 						<div className={classes["text"]}>
 							<h1>Have any idea ?</h1>
