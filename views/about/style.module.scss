@@ -45,21 +45,21 @@
 		.description {
 			display: flex;
 			align-items: center;
-      color: #000;
-      h2{
-        font-size: 1.7rem;
-        font-weight: 400;
-        color: #5000ca;
-      }
-      p{
-        font-size: 1rem;
-        font-weight: 600;
-      }
+			color: #000;
+			h2 {
+				font-size: 1.7rem;
+				font-weight: 400;
+				color: #5000ca;
+			}
+			p {
+				font-size: 1rem;
+				font-weight: 600;
+			}
 			.icon {
 				font-size: 4rem;
-        border: 1px solid darkgray;
-        border-radius: 50%;
-        padding: 0.6rem;
+				border: 1px solid darkgray;
+				border-radius: 50%;
+				padding: 0.6rem;
 				margin: 2rem 2rem 2rem 0;
 			}
 		}
@@ -68,9 +68,9 @@
 
 @media (max-width: 850px) {
 	.about-hold {
-    height: auto;
+		height: auto;
 		flex-direction: column;
-    align-items: flex-start;
+		align-items: flex-start;
 		.qualification {
 			padding: 4rem 2rem 4rem 4rem;
 			.description {
@@ -78,9 +78,9 @@
 					font-size: 6rem;
 					margin: 0 2rem 0 0;
 				}
-        h2{
-          font-size: 2rem;
-        }
+				h2 {
+					font-size: 2rem;
+				}
 			}
 
 			.design {
@@ -104,6 +104,31 @@
 		.about-me {
 			margin: 2rem;
 			padding: 0 1rem;
+		}
+	}
+}
+
+@media (max-width: 650px) {
+	.about-hold {
+		padding: 2rem 0rem 2rem 0rem;
+		.qualification {
+			padding: 4rem 2rem 4rem 3rem;
+			.description {
+				.icon {
+					font-size: 3rem;
+					margin: 0 1rem 0 0;
+				}
+				h2 {
+					font-size: 1.3rem;
+				}
+			}
+		}
+		.about-me {
+			margin: 2rem;
+			padding: 0;
+			.about-content{
+				font-size: 1rem;
+			}
 		}
 	}
 }

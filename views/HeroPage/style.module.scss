@@ -79,11 +79,12 @@
 	}
 }
 @media (max-width: 450px){
+	.nav{
+		height: auto;
+		padding: 5rem 0;
+	}
 	.m{
 		font-size: 3vw;
-	}
-	.nav{
-		padding: 0;
 	}
 	.nav .title,
 	.slider .title {

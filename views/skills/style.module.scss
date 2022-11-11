@@ -5,7 +5,7 @@
 		align-items: center;
 		padding: 2rem 20rem;
 		.skill-card {
-            overflow: hidden;
+			overflow: hidden;
 			position: relative;
 			cursor: pointer;
 			width: max-content;
@@ -18,7 +18,7 @@
 			height: max-content;
 			margin: 1rem;
 			border-radius: 5px;
-            border: 1px solid rgba(0, 0, 0, 0.114);
+			border: 1px solid rgba(0, 0, 0, 0.114);
 			.img {
 				width: 80%;
 				height: 80%;
@@ -46,6 +46,21 @@
 				.img {
 					width: 4rem;
 					height: 4rem;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 550px) {
+	.skill-hold {
+		.skill-card-hold {
+			.skill-card {
+				padding: 1.5rem 0 0 0;
+				width: 6rem;
+				.img {
+					width: 2rem;
+					height: 2rem;
 				}
 			}
 		}
