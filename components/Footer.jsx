@@ -3,28 +3,37 @@ import Stack from "@mui/material/Stack";
 import classes from "./style.module.scss";
 import { BsLinkedin, BsInstagram, BsTwitter, BsGithub } from "react-icons/bs";
 import Image from "next/image";
+import me from "../assets/me.png";
 
 const Footer = () => {
 	return (
 		<>
 			<div className={classes["footer"]}>
 				<div className={classes["footer-content"]}>
-					{/* <img
+					<img
 						alt='mypic'
 						className={classes["my-pic"]}
 						src='/assets/me.png'
-					/> */}
+					/>
 					<div className={classes["content"]}>
 						<div className={classes["text"]}>
 							<h1>Have any idea ?</h1>
 							<p>discuss with me</p>
 						</div>
-            <div className={classes["icon-hold"]}>
-               <div className={classes["icon"]}><BsLinkedin /></div>
-               <div className={classes["icon"]}><BsGithub /></div>
-               <div className={classes["icon"]}><BsInstagram /></div>
-               <div className={classes["icon"]}><BsTwitter /></div>
-            </div>
+						<div className={classes["icon-hold"]}>
+							<div className={classes["icon"]}>
+								<BsLinkedin />
+							</div>
+							<div className={classes["icon"]}>
+								<BsGithub />
+							</div>
+							<div className={classes["icon"]}>
+								<BsInstagram />
+							</div>
+							<div className={classes["icon"]}>
+								<BsTwitter />
+							</div>
+						</div>
 					</div>
 					<div className={classes["bottom-nav"]}>
 						<Stack
