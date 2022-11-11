@@ -5,6 +5,21 @@
 	text-align: center;
 	width: 100%;
 }
+//Navbar
+.appbar{
+	background-color: red;
+	width: 100vw;
+	overflow: hidden;
+	color: #5000ca;
+	box-shadow: none;
+	position: sticky;
+	top: 0px;
+	padding: 0 3rem;
+	.navItem{
+		color: black;
+	}
+}
+
 //footer
 .footer {
 	position: relative;

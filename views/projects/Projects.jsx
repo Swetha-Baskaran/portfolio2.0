@@ -14,6 +14,11 @@ const Projects = () => {
                 return (<IndividualProject key={index} />)
             })
           }
+          {
+            [1,2,3].map((e, index)=>{
+                return (<IndividualProject key={index} />)
+            })
+          }
         </Grid>
         <Pagination count={2} variant="outlined" color="primary" className={classes["pagnation"]}/>
     </div>

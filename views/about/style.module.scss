@@ -1,84 +1,109 @@
-.about-hold{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: baseline;
-    padding: 1rem 1.5rem 3rem 1.5rem;
-    .about-me{
-      flex: 50%;
-      margin: 3rem 0 3rem 3rem;
-      .about-heading{
-        transform: translateY(-37px);
-    }
-      .about-content{
-        padding: 0 0 1rem 0;
-        text-align: justify;
+.about-hold {
+	height: 100vh;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 2rem 1.5rem 2rem 1.5rem;
+	.about-me {
+		flex: 50%;
+		margin: 3rem 0 3rem 3rem;
+		.about-heading {
+			transform: translateY(-14px);
+		}
+		.about-content {
+			padding: 0 0 1rem 0;
+			font-size: 1.5rem;
+			font-weight: 500;
+			color: black;
+		}
+		.resume {
+			background-color: #5000ca;
+			padding: 0.7rem 1.5rem;
+			box-shadow: none;
+			border-radius: 20px 0 20px 0;
+		}
+		.design {
+			width: 100%;
+			position: relative;
+			height: 3px;
+			background-color: #5000ca;
+			margin-top: 4rem;
+			&::before {
+				content: "";
+				width: 1.7rem;
+				height: 1.7rem;
+				position: absolute;
+				background: #5000ca;
+				border-radius: 50%;
+				transform: translate(-3px, -12px);
+			}
+		}
+	}
+	.qualification {
+		flex: 45%;
+		padding: 2rem 2rem 2rem 7rem;
+		.description {
+			display: flex;
+			align-items: center;
+      color: #000;
+      h2{
+        font-size: 1.7rem;
+        font-weight: 400;
+        color: #5000ca;
       }
-      .design{
-        width: 100%;
-        position: relative;
-        height: 3px;
-        background-color: rebeccapurple;
-        margin-top: 4rem;    
-        &::before{
-            content: "";
-            width: 1.7rem;
-            height: 1.7rem;
-            position: absolute;
-            background: rebeccapurple;
-            border-radius: 50%;
-            transform: translate(-3px, -12px);
-        }
+      p{
+        font-size: 1rem;
+        font-weight: 600;
       }
-    }
-    .qualification{
-        flex: 50%;
-        padding: 2rem;
-       .description{
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         .icon{
-            font-size: 5rem;
-            margin: 2rem 2rem 2rem 0;
-         }
-       }
-    }
+			.icon {
+				font-size: 4rem;
+        border: 1px solid darkgray;
+        border-radius: 50%;
+        padding: 0.6rem;
+				margin: 2rem 2rem 2rem 0;
+			}
+		}
+	}
 }
 
-@media (max-width: 850px){
-    .about-hold{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 3rem 0;
-        .qualification{
-            padding: 1rem 2rem 2rem 2rem;
-            .description{
-                .icon{
-                    font-size: 4rem;
-                    margin: 0 2rem 0 0;
-                }
-            }
-            .design{
-                width: 100%;
-                position: relative;
-                height: 3.6px;
-                background-color: rebeccapurple;
-                margin-top: 4rem;    
-                &::before{
-                    content: "";
-                    width: 1.7rem;
-                    height: 1.7rem;
-                    position: absolute;
-                    background: rebeccapurple;
-                    border-radius: 50%;
-                    right: 0;
-                    transform: translate(3px, -12px);
-                }
-              }
+@media (max-width: 850px) {
+	.about-hold {
+    height: auto;
+		flex-direction: column;
+    align-items: flex-start;
+		.qualification {
+			padding: 4rem 2rem 4rem 4rem;
+			.description {
+				.icon {
+					font-size: 6rem;
+					margin: 0 2rem 0 0;
+				}
+        h2{
+          font-size: 2rem;
         }
-        .about-me{
-            margin: 2rem;
-        }
-    }
+			}
+
+			.design {
+				width: 100%;
+				position: relative;
+				height: 3.6px;
+				background-color: #5000ca;
+				margin-top: 4rem;
+				&::before {
+					content: "";
+					width: 1.7rem;
+					height: 1.7rem;
+					position: absolute;
+					background: #5000ca;
+					border-radius: 50%;
+					right: 0;
+					transform: translate(3px, -12px);
+				}
+			}
+		}
+		.about-me {
+			margin: 2rem;
+			padding: 0 1rem;
+		}
+	}
 }

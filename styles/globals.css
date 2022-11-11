@@ -9,9 +9,17 @@ body {
 	width: 100vw;
 	/* overflow: hidden; */
 }
+body{
+	width: 100vw;
+	overflow-x: hidden;
+}
 .main{
 	width: 100vw;
-	overflow: hidden;
+	overflow-x: hidden;
+	position: relative;
+}
+.section{
+	z-index: 888;
 }
 ::selection {
 	display: none;
@@ -44,10 +52,10 @@ a {
 }
 
 .css-19mk8g1-MuiInputBase-root-MuiFilledInput-root, .css-1gzyby-MuiInputBase-root-MuiFilledInput-root{
-	border-bottom: 1px solid rebeccapurple;
+	border-bottom: 1px solid #5000ca;
 }
 .css-19mk8g1-MuiInputBase-root-MuiFilledInput-root:after, .css-1gzyby-MuiInputBase-root-MuiFilledInput-root:after{
-	border-bottom: 1px solid rebeccapurple;
+	border-bottom: 1px solid #5000ca;
 }
 .css-10botns-MuiInputBase-input-MuiFilledInput-input, .css-1gzyby-MuiInputBase-root-MuiFilledInput-root:hover, .css-1gzyby-MuiInputBase-root-MuiFilledInput-root{
     background-color: #f5ebffcf;

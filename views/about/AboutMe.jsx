@@ -1,6 +1,8 @@
 import classes from "./style.module.scss";
 import Button from "@mui/material/Button";
-import SchoolTwoToneIcon from "@mui/icons-material/SchoolTwoTone";
+import { RiCodeSSlashFill } from "react-icons/ri"
+import { FaUniversity } from "react-icons/fa";
+import { BsGraphUp } from "react-icons/bs";
 
 const AboutMe = () => {
 	return (
@@ -8,33 +10,42 @@ const AboutMe = () => {
 			<div className={classes["about-me"]}>
 				<h1 className={classes["about-heading"]}>Bit about me</h1>
 				<p className={classes["about-content"]}>
-					The daguerreotype had shortcomings, notably the fragility of the
-					mirror-like image surface and the particular viewing conditions
-					required to see the image properly. Each was a unique opaque
-					positive that could only be duplicated by copying it with a
-					camera. Inventors set about working out improved processes that
-					would be more practical. By the end of the 1850s the
-					daguerreotype had been replaced by the less expensive and more
-					easily viewed ambrotype and tintype, which made use of.
+					{`I'm Swetha Baskaran, a Frontend Developer. I was passionated on
+					programming and having the ability to solve problems. I started
+					coding at my age of 17 and I was completely addicted to it. I
+					wished to become a own stuff full stack web developer within a
+					short while as I was working for that. I'm an optimistic person
+					aspiring to become a tech entrepreneur. I was intrested in
+					blockchain and web3 and also fascinated to learn futuristic
+					technologies. That's all about my short story.`}
 				</p>
-				<Button variant='contained'>Download Resume</Button>
-				<div className={classes["design"]}></div>
+				<Button variant='contained' className={classes["resume"]}>
+					Download Resume
+				</Button>
 			</div>
 			<div className={classes["qualification"]}>
-				{[1, 2, 3].map((e, index) => {
-					return (
-						<div className={classes["description"]} key={index}>
-								<SchoolTwoToneIcon className={classes["icon"]} />
-							<div className={classes["content"]}>
-								<h2>Btech IT</h2>
-								<p>
-									The daguerreotype had shortcomings, notably the
-								</p>
-							</div>
-						</div>
-					);
-				})}
-        <div className={classes["design"]}></div>
+				<div className={classes["description"]}>
+					<RiCodeSSlashFill className={classes["icon"]} />
+					<div className={classes["content"]}>
+						<h2>Software Engineer Intern</h2>
+						<p>Coginved Solutions, LLp</p>
+					</div>
+				</div>
+				<div className={classes["description"]}>
+					<FaUniversity className={classes["icon"]} />
+					<div className={classes["content"]}>
+						<h2>B.Tech Student</h2>
+						<p>Information Technology</p>
+						<p>Puducherry Technological Univesity</p>
+					</div>
+				</div>
+				<div className={classes["description"]}>
+					<BsGraphUp className={classes["icon"]} />
+					<div className={classes["content"]}>
+						<h2>Learning</h2>
+						<p>Node Js</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	);

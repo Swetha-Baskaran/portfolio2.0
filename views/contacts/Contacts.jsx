@@ -3,10 +3,8 @@ import Titles from "../../components/Titles";
 import Form from "./Form";
 import classes from "./style.module.scss";
 import Divider from "@mui/material/Divider";
-import { useMediaQuery } from "react-responsive";
 
 const Contacts = () => {
-	const isMobile = useMediaQuery({ query: '(max-width: 750px)' });
 	return (
 		<div className={classes["contacts-hold"]}>
 			<div className={classes["contacts"]}>
@@ -27,7 +25,7 @@ const Contacts = () => {
 					})}
 				</div>
 			</div>
-			<Divider orientation={isMobile ? 'horizontal' : 'vertical'} flexItem>
+			<Divider orientation='vertical' flexItem>
 				or
 			</Divider>
 			<Form />

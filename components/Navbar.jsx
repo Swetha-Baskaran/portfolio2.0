@@ -12,6 +12,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
+import classes from './style.module.scss'
 
 const drawerWidth = '100%';
 const navItems = ['Home', 'About', 'Services', 'Skills', 'Projects', 'Contact'];
@@ -41,8 +42,8 @@ function DrawerAppBar(props) {
   const container = window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <div style={{ display: 'flex' }}>
-      <AppBar component="nav" position='static'>
+    <div style={{ display: 'flex', width:"100vw", overflow: "hidden" }}>
+      <AppBar className={classes["appbar"]} component="nav">
         <Toolbar>
           <IconButton
             aria-label="open drawer"
@@ -61,7 +62,7 @@ function DrawerAppBar(props) {
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
-              <Button key={item} sx={{ color: '#fff' }}>
+              <Button key={item} sx={{ color: 'black' }}>
                 {item}
               </Button>
             ))}
@@ -75,7 +76,7 @@ function DrawerAppBar(props) {
           open={mobileOpen}
           onClose={handleDrawerToggle}
           ModalProps={{
-            keepMounted: true, // Better open performance on mobile.
+            keepMounted: true, 
           }}
           sx={{
             display: { xs: 'block', sm: 'none' },

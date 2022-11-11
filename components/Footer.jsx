@@ -2,12 +2,12 @@ import Divider from "@mui/material/Divider";
 import Stack from "@mui/material/Stack";
 import classes from "./style.module.scss";
 import { BsLinkedin, BsInstagram, BsTwitter, BsGithub } from "react-icons/bs";
+import Image from "next/image";
 
 const Footer = () => {
 	return (
 		<>
 			<div className={classes["footer"]}>
-				{/* <img src='/assets/svg-path.png' alt='' /> */}
 				<div className={classes["footer-content"]}>
 					<img
 						alt='mypic'
@@ -55,7 +55,6 @@ const Footer = () => {
 
 const customStyle = {
 	bottomNav: {
-		width: "100%",
 		textAlign: "center",
 		justifyContent: "center",
 		padding: "1rem 0 2rem 0",
