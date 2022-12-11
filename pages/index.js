@@ -9,6 +9,7 @@ import HeroPage from "../views/HeroPage/HeroPage";
 import Projects from "../views/projects/Projects";
 import Services from "../views/services/Services";
 import Skills from "../views/skills/Skills";
+import Specialization from "../views/specialization/Specialization";
 
 export default function Home() {
 	return (
@@ -24,6 +25,7 @@ export default function Home() {
 				<div className="section">
 					<Services />
 					<AboutMe />
+					<Specialization />
 					<Skills />
 					<Projects />
 					<Contacts />

@@ -10,8 +10,7 @@ import classes from "./style.module.scss";
 
 const IndividualProject = () => {
 	return (
-		// <Card sx={{ maxWidth: 360 }} className={classes["individual-card"]}>
-		<Card sx={{ maxWidth: 360 }} className={classes["individual-card"]} style={customStyle.individualCard}>
+			<Card sx={{ maxWidth: 360 }} className={classes["individual-card"]} style={customStyle.individualCard}>
 			<div className={classes["card-img-hold"]}>
 				<img
 					src='/assets/gatsby-hospital-landing-page.png'

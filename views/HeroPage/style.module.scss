@@ -12,7 +12,9 @@
 }
 .home-partition{
 	display: flex;
-	background-color: #1e1f26;
+	// background-color: #1e1f26;
+	justify-content: space-evenly;
+	align-items: center;
 	padding: 1rem 3rem;
 }
 .nav{
@@ -23,12 +25,10 @@
 	align-items: flex-start;
 	height: 100vh;
 	position: relative;
-	padding: 0 2em;
 }
 
 .background {
     position: absolute;
-    height: 90vh;
     top: 0;
     bottom: 0;
     left: 0;
@@ -38,7 +38,7 @@
 
 .nav .title{
 	font-family: "Josefin Sans", sans-serif;
-	font-size: 6vw;
+	font-size: 5vw;
 	margin: 0;
 	padding-bottom: 0.5rem;
 	letter-spacing: 0.5rem;
@@ -52,9 +52,18 @@
 }
 .intro-text{
 	font-family: "ROBOTO", sans-serif;
-	color: white;
+	// color: white;
 	padding-left: 0.5rem;
+	font-size: 1.5rem;
 	text-transform: capitalize;
+}
+.learn-more-hold{
+	width: 100%;
+	.learn-more{
+		text-align: center;
+		border: 1px solid;
+		margin-top: 2rem;
+	}
 }
 .m {
 	font-size: 1.7vw;
@@ -69,10 +78,29 @@
 		font-size: 2.2vw;
 	}
 }
-
+.imgSection{
+	padding: 0 0 5rem 0;
+	.hexImg1{
+		max-width: 20px !important;
+		max-height: 5rem !important;
+	}
+	.hexImg2{
+		// transform: translate(-126px, -203px);
+		// z-index: 1111;
+	}
+	.hexImg3{}
+}
 @media (max-width: 750px){
 	.home-partition{
 		flex-direction: column;
+		text-align: center;
+	}
+	.intro-text, .nav .title{
+		width: 100%;
+		text-align: center;
+	}
+	.nav{
+		height: auto;
 	}
 	.m{
 		font-size: 2.5vw;
@@ -84,7 +112,7 @@
 		padding: 5rem 0;
 	}
 	.m{
-		font-size: 3vw;
+		font-size: 3.1vw;
 	}
 	.nav .title,
 	.slider .title {

@@ -7,11 +7,22 @@
 	width: 70%;
 }
 .skill-hold {
+	.resume-hold {
+		text-align: center;
+		padding: 3rem 0 5rem 0;
+		.resume {
+			background-color: #5000ca;
+			text-align: center;
+			padding: 0.7rem 1.5rem;
+			box-shadow: none;
+			border-radius: 20px 0 20px 0;
+		}
+	}
 	.skill-card-hold {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		padding: 2rem 10rem;
+		padding: 2rem 2rem;
 		.skill-card {
 			overflow: hidden;
 			position: relative;
@@ -19,27 +30,19 @@
 			width: max-content;
 			display: flex;
 			flex-direction: column;
-			justify-content: center;
+			justify-content: space-evenly;
 			align-items: center;
 			padding: 1rem 1rem 0 1rem;
-			width: 9rem;
+			width: 17rem;
 			height: max-content;
-			margin: 1rem;
-			border-radius: 5px;
-			border: 1px solid rgba(0, 0, 0, 0.114);
+			margin: 1rem 0rem;
 			.img {
-				width: 80%;
-				height: 80%;
-				margin: 0.5rem 0;
+				width: 60%;
+				height: 150%;
+				margin: 0.5rem 2rem;
 			}
-			.skeleton {
-				position: absolute;
-				width: 23rem;
-				transform: rotate(45deg);
-				height: 22rem;
-				top: 0;
-				z-index: -1;
-				background-color: #e4d2d212;
+			p{
+				text-align: center;
 			}
 		}
 	}

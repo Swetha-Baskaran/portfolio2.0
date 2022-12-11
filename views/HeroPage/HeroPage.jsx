@@ -1,29 +1,16 @@
-import { useCallback } from "react";
 import classes from "./style.module.scss";
-// import Particles from "react-tsparticles";
-import { loadFull } from "tsparticles";
-// import particleData from "../../data.json";
-// import Image from "next/image";
+import Image from "next/image";
+import devImg from "../../assets/mineHex.png";
+import { Button } from "@mui/material";
 
 const HeroPage = () => {
-	// const particlesInit = useCallback(async engine => {
-	// 	console.log(engine);
-	// 	await loadFull(engine);
-	// }, []);
-
-	// const particlesLoaded = useCallback(async container => {
-	// 	await console.log(container);
-	// }, []);
 	return (
 		<>
 			<div className={classes["header"]}>
-				<div className={classes["particleHold"]}>
-					
-				</div>
 				<div className={classes["home-partition"]}>
-					
 					<section className={classes["nav"]}>
-						<p className={classes["intro-text"]}>hey there</p>
+						<p className={classes["intro-text"]}>{"hey I'm"}</p>
+						<br />
 						<h1 className={classes["title"]}>
 							SWETHA <br /> BASKARAN
 						</h1>
@@ -31,13 +18,14 @@ const HeroPage = () => {
 							<span className={classes["m"]}>a</span>
 							<span className={classes["m"]}>&nbsp;</span>
 							<span className={classes["m"]}>F</span>
-							<span className={classes["m"]}>R</span>
-							<span className={classes["m"]}>O</span>
-							<span className={classes["m"]}>N</span>
+							<span className={classes["m"]}>U</span>
+							<span className={classes["m"]}>L</span>
+							<span className={classes["m"]}>L</span>
+							<span className={classes["m"]}>S</span>
 							<span className={classes["m"]}>T</span>
-							<span className={classes["m"]}>E</span>
-							<span className={classes["m"]}>N</span>
-							<span className={classes["m"]}>D</span>
+							<span className={classes["m"]}>A</span>
+							<span className={classes["m"]}>C</span>
+							<span className={classes["m"]}>K</span>
 							<span className={classes["m"]}>&nbsp;</span>
 							<span className={classes["m"]}>D</span>
 							<span className={classes["m"]}>E</span>
@@ -49,9 +37,20 @@ const HeroPage = () => {
 							<span className={classes["m"]}>E</span>
 							<span className={classes["m"]}>R</span>
 						</h3>
+						<p>
+							I like to design and code user-friendly websites. Nice to
+							meet you.
+						</p>
+						<div className={classes["learn-more-hold"]}>
+							<Button className={classes["learn-more"]}>
+								Learn More
+							</Button>
+						</div>
 					</section>
-					<section>
-						{/* <Image src={devImg} alt="" /> */}
+					<section className={classes["imgSection"]}>
+						<Image className={classes["hexImg1"]} src={devImg} alt='' />
+						{/* <Image className={classes["hexImg2"]} src={devImg} alt="" /> */}
+						{/* <Image className={classes["hexImg3"]} src={devImg} alt="" /> */}
 					</section>
 				</div>
 			</div>

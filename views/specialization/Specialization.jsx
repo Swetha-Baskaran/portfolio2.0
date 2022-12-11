@@ -1,12 +1,14 @@
 import Grid from "@mui/material/Grid";
 import Skeleton from "@mui/material/Skeleton";
 import Titles from "../../components/Titles";
-import { imageUrl } from "./images";
+import { imageUrl } from "./content";
 import classes from "./style.module.scss";
+import Button from "@mui/material/Button";
 
-const Skills = () => {
+const Specialization = () => {
 	return (
 		<div className={classes["skill-hold"]}>
+			<hr className={classes["hr-dotted"]} />
 			<Titles name='What i do.' />
 			<Grid container className={classes["skill-card-hold"]}>
 				{imageUrl.map(e => {
@@ -14,17 +16,18 @@ const Skills = () => {
 						<div key={e.url} className={classes["skill-card"]}>
 							<img src={e.url} alt={e.name} className={classes["img"]} />
 							<p>{e.name}</p>
-							<Skeleton
-								animation='wave'
-								variant='rounded'
-								className={classes["skeleton"]}
-							/>
 						</div>
 					);
 				})}
 			</Grid>
+			<div className={classes["resume-hold"]}>
+				<Button variant='contained' className={classes["resume"]}>
+					View My Resume
+				</Button>
+			</div>
+            <hr className={classes["hr-dotted"]} />
 		</div>
 	);
 };
 
-export default Skills;
+export default Specialization;

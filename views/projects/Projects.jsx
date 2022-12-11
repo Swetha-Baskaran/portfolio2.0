@@ -3,17 +3,12 @@ import IndividualProject from './Card';
 import classes from './style.module.scss';
 import Grid from '@mui/material/Grid';
 import Titles from '../../components/Titles';
-
+import { ProjectUrl } from '../../data/projects';
 const Projects = () => {
   return (
     <div className={classes["project-container"]}>
         <Titles name="What I did." />
         <Grid container className={classes["grid"]}>
-          {
-            [1,2,3].map((e, index)=>{
-                return (<IndividualProject key={index} />)
-            })
-          }
           {
             [1,2,3].map((e, index)=>{
                 return (<IndividualProject key={index} />)
