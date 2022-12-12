@@ -1,15 +1,8 @@
 import Head from "next/head";
-import Image from "next/image";
-import { RiCodeSSlashFill } from "react-icons/ri";
 import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
 import AboutMe from "../views/about/AboutMe";
-import Contacts from "../views/contacts/Contacts";
 import HeroPage from "../views/HeroPage/HeroPage";
 import Projects from "../views/projects/Projects";
-import Services from "../views/services/Services";
-import Skills from "../views/skills/Skills";
-import Specialization from "../views/specialization/Specialization";
 
 export default function Home() {
 	return (
@@ -23,12 +16,8 @@ export default function Home() {
 				{/* <Navbar /> */}
 				<HeroPage />
 				<div className="section">
-					<Services />
-					<AboutMe />
-					<Specialization />
-					<Skills />
 					<Projects />
-					<Contacts />
+					<AboutMe />
 					<Footer />
 				</div>
 			</main>

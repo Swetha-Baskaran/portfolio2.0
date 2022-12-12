@@ -19,6 +19,7 @@ body{
 	position: relative;
 }
 .section{
+	background-color: white;
 	z-index: 888;
 }
 ::selection {

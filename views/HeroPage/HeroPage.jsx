@@ -1,15 +1,18 @@
 import classes from "./style.module.scss";
-import Image from "next/image";
-import devImg from "../../assets/mineHex.png";
-import { Button } from "@mui/material";
 
 const HeroPage = () => {
 	return (
 		<>
 			<div className={classes["header"]}>
+				<video autoPlay muted loop className={classes["myVideo"]} >
+					<source src='assets/videos/mobilevideo.mp4' type='video/mp4' />
+				</video>
 				<div className={classes["home-partition"]}>
 					<section className={classes["nav"]}>
-						<p className={classes["intro-text"]}>{"hey I'm"}</p>
+						<p className={classes["intro-text"]}>
+							{"hey I'm"}
+							<span className={classes["side-line"]}></span>
+						</p>
 						<br />
 						<h1 className={classes["title"]}>
 							SWETHA <br /> BASKARAN
@@ -41,14 +44,14 @@ const HeroPage = () => {
 							I like to design and code user-friendly websites. Nice to
 							meet you.
 						</p>
-						<div className={classes["learn-more-hold"]}>
+						{/* <div className={classes["learn-more-hold"]}>
 							<Button className={classes["learn-more"]}>
 								Learn More
 							</Button>
-						</div>
+						</div> */}
 					</section>
 					<section className={classes["imgSection"]}>
-						<Image className={classes["hexImg1"]} src={devImg} alt='' />
+						{/* <Image className={classes["hexImg1"]} src={devImg} alt='' /> */}
 						{/* <Image className={classes["hexImg2"]} src={devImg} alt="" /> */}
 						{/* <Image className={classes["hexImg3"]} src={devImg} alt="" /> */}
 					</section>

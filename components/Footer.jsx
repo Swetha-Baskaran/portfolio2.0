@@ -2,8 +2,6 @@ import Divider from "@mui/material/Divider";
 import Stack from "@mui/material/Stack";
 import classes from "./style.module.scss";
 import { BsLinkedin, BsInstagram, BsTwitter, BsGithub } from "react-icons/bs";
-import Image from "next/image";
-import me from "../assets/me.png";
 
 const Footer = () => {
 	return (
@@ -49,9 +47,9 @@ const Footer = () => {
 							}
 							spacing={5}>
 							<div className={classes["navs"]}>Home</div>
-							<div className={classes["navs"]}>About</div>
+							<div className={classes["navs"]}>Projects</div>
+							<div className={classes["navs"]}>Details</div>
 							<div className={classes["navs"]}>Skills</div>
-							<div className={classes["navs"]}>Project</div>
 							<div className={classes["navs"]}>Contact</div>
 						</Stack>
 					</div>
