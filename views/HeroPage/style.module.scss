@@ -1,9 +1,7 @@
-.header{
+.header {
 	width: 100vw;
 	height: 100vh;
-	// overflow: hidden auto;
 	position: relative;
-	// background-color: #ffffffd1;
 }
 
 .particleHold {
@@ -25,7 +23,7 @@
 	z-index: -1;
 }
 .home-partition {
-	background-color: #ffffffd1;
+	background-color: rgb(255 255 255 / 90%);
 	height: 100vh;
 	overflow: hidden;
 	z-index: 111;
@@ -112,8 +110,8 @@
 		max-height: 5rem !important;
 	}
 }
-@media (max-width: 1550px){
-	.myVideo{
+@media (max-width: 1550px) {
+	.myVideo {
 		bottom: 0;
 	}
 }
@@ -133,10 +131,13 @@
 		font-size: 2.5vw;
 	}
 }
-@media (max-width: 450px) {
+@media (max-width: 500px) {
 	.myVideo {
-		// top: -20px;
+		top: -20px;
+		width: 160%;
 	}
+}
+@media (max-width: 450px) {
 	.nav {
 		height: auto;
 		padding: 5rem 0;
@@ -154,13 +155,13 @@
 }
 
 @media (max-width: 375px) {
-	.myVideo{
-		width: 120%;
+	.myVideo {
+		width: 170%;
 	}
 }
 @media (max-width: 315px) {
-	.myVideo{
-		width: 160%;
+	.myVideo {
+		width: 200%;
 	}
 }
 
