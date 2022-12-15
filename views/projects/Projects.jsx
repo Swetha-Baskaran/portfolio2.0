@@ -5,7 +5,6 @@ import classes from "./style.module.scss";
 import Grid from "@mui/material/Grid";
 import Titles from "../../components/Titles";
 import { ProjectUrl } from "../../data/projects";
-import Fade from "react-reveal/Fade";
 import ProjectModal from "../../components/ProjectDetails";
 
 const Projects = () => {
@@ -19,9 +18,7 @@ const Projects = () => {
 				<Grid container className={classes["grid"]}>
 					{[1, 2, 3, 4, 5, 6].map((e, index) => {
 						return (
-							<Fade bottom big opposite key={index}>
-								<IndividualProject handleOpen={handleOpen} />
-							</Fade>
+							<IndividualProject handleOpen={handleOpen} key={index} />
 						);
 					})}
 				</Grid>
@@ -32,7 +29,11 @@ const Projects = () => {
 					className={classes["pagnation"]}
 				/>
 			</div>
-			<ProjectModal open={open} handleClose={handleClose} handleOpen={handleOpen} />
+			<ProjectModal
+				open={open}
+				handleClose={handleClose}
+				handleOpen={handleOpen}
+			/>
 		</>
 	);
 };
