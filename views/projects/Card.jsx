@@ -8,9 +8,13 @@ import { RiCodeSSlashFill, RiExternalLinkFill } from "react-icons/ri";
 import { FiGithub } from "react-icons/fi";
 import classes from "./style.module.scss";
 
-const IndividualProject = () => {
+const IndividualProject = ({ handleOpen }) => {
 	return (
-			<Card sx={{ maxWidth: 360 }} className={classes["individual-card"]} style={customStyle.individualCard}>
+		<Card
+			onClick={handleOpen}
+			sx={{ maxWidth: 360 }}
+			className={classes["individual-card"]}
+			style={customStyle.individualCard}>
 			<div className={classes["card-img-hold"]}>
 				<img
 					src='/assets/gatsby-hospital-landing-page.png'
@@ -23,6 +27,9 @@ const IndividualProject = () => {
 				</div>
 			</div>
 			<CardContent className={classes["card-title"]}>Digi App</CardContent>
+			<CardContent>
+				{`I used react.js Hooks with useState and useEffect, when I scroll-down and the screen comes down Header hides after 250 pixels. Now I want to know how to display Header using the react Hooks when I scroll up.`}
+			</CardContent>
 			<CardContent className={classes["card-skills"]}>
 				<p>
 					<RiCodeSSlashFill />

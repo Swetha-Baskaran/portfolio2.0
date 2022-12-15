@@ -1,15 +1,14 @@
 .about-hold {
-	height: 100vh;
+	height: max-content;
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
-	padding: 2rem 1.5rem 2rem 1.5rem;
+	padding: 2rem 2rem 2rem 5rem;
 	.about-me {
 		flex: 50%;
 		margin: 3rem 0 3rem 3rem;
 		.about-heading {
 			transform: translateY(-14px);
-			// font-weight: 600;
 			font-size: 2rem;
 			color: #5000ca;
 		}
@@ -19,7 +18,7 @@
 			font-weight: 500;
 			color: black;
 		}
-		
+
 		.design {
 			width: 100%;
 			position: relative;
@@ -64,20 +63,28 @@
 	}
 }
 
-@media (max-width: 850px) {
+@media (max-width: 950px) {
 	.about-hold {
 		height: auto;
 		flex-direction: column;
 		align-items: flex-start;
 		.qualification {
 			padding: 4rem 2rem 4rem 4rem;
+		}
+	}
+}
+
+@media (max-width: 850px) {
+	.about-hold {
+		.qualification {
+			padding: 4rem 2rem 4rem 4rem;
 			.description {
 				.icon {
-					font-size: 6rem;
+					font-size: 4rem;
 					margin: 0 2rem 0 0;
 				}
 				h2 {
-					font-size: 2rem;
+					font-size: 1.7rem;
 				}
 			}
 
@@ -108,7 +115,7 @@
 
 @media (max-width: 650px) {
 	.about-hold {
-		padding: 2rem 0rem 2rem 0rem;
+		padding: 2rem 0rem 2rem 4rem;
 		.qualification {
 			padding: 4rem 2rem 4rem 3rem;
 			.description {
@@ -124,9 +131,17 @@
 		.about-me {
 			margin: 2rem;
 			padding: 0;
-			.about-content{
+			.about-content {
 				font-size: 1rem;
 			}
+		}
+	}
+}
+@media (max-width: 600px){
+	.about-hold{
+		padding: 2rem 0rem;
+		.qualification{
+			padding: 1rem 2rem 4rem 3rem;
 		}
 	}
 }

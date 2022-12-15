@@ -3,6 +3,7 @@ import Footer from "../components/Footer";
 import Services from "../views/services/Services";
 import Skills from "../views/skills/Skills";
 import Specialization from "../views/specialization/Specialization";
+import Navbar from "../components/Navbar"
 
 export default function skills() {
 	return (
@@ -13,10 +14,10 @@ export default function skills() {
 				<link rel='icon' href='/favicon.jpg' />
 			</Head>
 			<main className='main'>
-				{/* <Navbar /> */}
+				<Navbar />
 				<div className="section">
-					<Services />
-					<Specialization />
+					{/* <Services /> */}
+					{/* <Specialization /> */}
 					<Skills />
 					<Footer />
 				</div>

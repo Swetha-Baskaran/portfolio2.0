@@ -1,10 +1,29 @@
+import { useState } from "react";
+import { FaMoon } from "react-icons/fa"
+import { BsSunFill } from "react-icons/bs"
 import classes from "./style.module.scss";
+import BouncingArrow from "../../components/BouncingArrow";
 
 const HeroPage = () => {
+	let [mode, setMode] = useState("Day");
+	const handleMode = () => {
+		mode == "Day" ? setMode("Night") : setMode("Day");
+	};
 	return (
 		<>
 			<div className={classes["header"]}>
-				<video autoPlay muted loop className={classes["myVideo"]} >
+				<div
+					className={classes["modeToggler"]}
+					onClick={() => {
+						handleMode();
+					}}>
+						{
+							mode == "Day" ?
+							<BsSunFill /> :
+							<FaMoon />
+						}
+					</div>
+				<video autoPlay muted loop className={classes["myVideo"]}>
 					<source src='assets/videos/mobilevideo.mp4' type='video/mp4' />
 				</video>
 				<div className={classes["home-partition"]}>
@@ -44,17 +63,14 @@ const HeroPage = () => {
 							I like to design and code user-friendly websites. Nice to
 							meet you.
 						</p>
+						<BouncingArrow />
 						{/* <div className={classes["learn-more-hold"]}>
 							<Button className={classes["learn-more"]}>
 								Learn More
 							</Button>
 						</div> */}
 					</section>
-					<section className={classes["imgSection"]}>
-						{/* <Image className={classes["hexImg1"]} src={devImg} alt='' /> */}
-						{/* <Image className={classes["hexImg2"]} src={devImg} alt="" /> */}
-						{/* <Image className={classes["hexImg3"]} src={devImg} alt="" /> */}
-					</section>
+					<div></div>
 				</div>
 			</div>
 		</>

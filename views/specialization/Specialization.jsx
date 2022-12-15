@@ -8,7 +8,6 @@ import Button from "@mui/material/Button";
 const Specialization = () => {
 	return (
 		<div className={classes["skill-hold"]}>
-			<hr className={classes["hr-dotted"]} />
 			<Titles name='What i do.' />
 			<Grid container className={classes["skill-card-hold"]}>
 				{imageUrl.map(e => {
@@ -25,7 +24,6 @@ const Specialization = () => {
 					View My Resume
 				</Button>
 			</div>
-            <hr className={classes["hr-dotted"]} />
 		</div>
 	);
 };

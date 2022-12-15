@@ -1,23 +1,101 @@
 //Titles
 .titles {
 	font-size: 3rem;
-	padding: 2rem 2rem 2rem 2rem;
+	padding: 2rem 2rem 3rem 2rem;
 	text-align: center;
 	width: 100%;
 }
 //Navbar
-.appbar{
-	background-color: red;
-	width: 100vw;
+.hamburgerMenu {
+	position: fixed;
+	z-index: 1111;
+	cursor: pointer;
+	left: 50px;
+	top: 45px;
+	.icon {
+		font-size: 2.3rem;
+	}
+}
+.appbar {
+	background-color: transparent;
 	overflow: hidden;
 	color: #5000ca;
 	box-shadow: none;
 	position: sticky;
 	top: 0px;
-	padding: 0 3rem;
-	.navItem{
+	.myIcon {
+		width: 65px;
+		padding: 1.7rem 0 0 0;
+	}
+	.navItem {
 		color: black;
 	}
+}
+
+//bouncing arrow
+/* Scroll down indicator (bouncing) */
+
+@-webkit-keyframes bounce {
+	0%,
+	20%,
+	50%,
+	80%,
+	100% {
+		-webkit-transform: translateY(0);
+		transform: translateX(0);
+	}
+	40% {
+		-webkit-transform: translateY(-30px);
+		transform: translateY(-30px);
+	}
+	60% {
+		-webkit-transform: translateY(-15px);
+		transform: translateY(-15px);
+	}
+}
+
+@-moz-keyframes bounce {
+	0%,
+	20%,
+	50%,
+	80%,
+	100% {
+		transform: translateY(0);
+	}
+	40% {
+		transform: translateY(-30px);
+	}
+	60% {
+		transform: translateY(-15px);
+	}
+}
+
+@keyframes bounce {
+	0%,
+	20%,
+	50%,
+	80%,
+	100% {
+		-ms-transform: translateY(0);
+		transform: translateY(0);
+	}
+	40% {
+		-ms-transform: translateY(-30px);
+		transform: translateY(-30px);
+	}
+	60% {
+		-ms-transform: translateY(-15px);
+		transform: translateY(-15px);
+	}
+}
+
+.bounce {
+	margin-top: 3rem; 
+	text-align: center;
+	cursor: pointer;
+	-webkit-animation: bounce 2s infinite;
+	animation: bounce 2s infinite;
+	font-size: 2rem;
 }
 
 //footer
@@ -33,10 +111,10 @@
 		padding: 2rem 4rem 0 4rem;
 		.content {
 			display: flex;
-            align-items: center;
-            .text{
-                flex: 0.487;
-            }
+			align-items: center;
+			.text {
+				flex: 0.487;
+			}
 			.icon-hold {
 				display: flex;
 				justify-content: center;
@@ -48,7 +126,7 @@
 				border: 2px solid;
 				margin: 1rem;
 				font-size: 1.5rem;
-                cursor: pointer;
+				cursor: pointer;
 			}
 		}
 		.my-pic {
@@ -78,17 +156,17 @@
 	}
 }
 
-@media (max-width: 1010px){
-   .footer{
-    .footer-content{
-        .content{
-            display: block;
-            .icon-hold{
-                margin-top: 4rem;
-            }
-        }
-    }
-   }
+@media (max-width: 1010px) {
+	.footer {
+		.footer-content {
+			.content {
+				display: block;
+				.icon-hold {
+					margin-top: 4rem;
+				}
+			}
+		}
+	}
 }
 
 @media (max-width: 750px) {
@@ -101,9 +179,9 @@
 		.footer-content {
 			padding: 6.5rem 2rem 2rem 2rem;
 			.content {
-                .icon-hold{
-                    margin-top: 2.5rem;
-                }
+				.icon-hold {
+					margin-top: 2.5rem;
+				}
 			}
 			.my-pic {
 				top: -91px;

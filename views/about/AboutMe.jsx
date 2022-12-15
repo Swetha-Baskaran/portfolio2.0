@@ -7,7 +7,7 @@ const AboutMe = () => {
 	return (
 		<div className={classes["about-hold"]}>
 			<div className={classes["about-me"]}>
-				<h2 className={classes["about-heading"]}>Bit about me</h2>
+				<div className={classes["about-heading"]}>Bit about me</div>
 				<p className={classes["about-content"]}>{`I'm Swetha Baskaran, a Frontend Developer. `}</p>
 				<p className={classes["about-content"]}>
 					{`I was passionated on

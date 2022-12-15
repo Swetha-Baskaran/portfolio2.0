@@ -3,6 +3,7 @@ import Footer from "../components/Footer";
 import AboutMe from "../views/about/AboutMe";
 import HeroPage from "../views/HeroPage/HeroPage";
 import Projects from "../views/projects/Projects";
+import Navbar from "../components/Navbar"
 
 export default function Home() {
 	return (
@@ -13,11 +14,11 @@ export default function Home() {
 				<link rel='icon' href='/favicon.jpg' />
 			</Head>
 			<main className='main'>
-				{/* <Navbar /> */}
+				<Navbar />
 				<HeroPage />
 				<div className="section">
-					<Projects />
 					<AboutMe />
+					<Projects />
 					<Footer />
 				</div>
 			</main>
