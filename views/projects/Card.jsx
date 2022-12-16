@@ -7,6 +7,7 @@ import Typography from "@mui/material/Typography";
 import { RiCodeSSlashFill, RiExternalLinkFill } from "react-icons/ri";
 import { FiGithub } from "react-icons/fi";
 import classes from "./style.module.scss";
+import Image from "next/image";
 
 const IndividualProject = ({ handleOpen }) => {
 	return (
@@ -16,10 +17,11 @@ const IndividualProject = ({ handleOpen }) => {
 			className={classes["individual-card"]}
 			style={customStyle.individualCard}>
 			<div className={classes["card-img-hold"]}>
-				<img
+				<Image
 					src='/assets/gatsby-hospital-landing-page.png'
 					alt=''
 					className={classes["card-img"]}
+					layout="fill"
 				/>
 				<div className={classes["link-btns"]}>
 					<FiGithub className={classes["btns"]} />

@@ -3,6 +3,7 @@ import Skeleton from "@mui/material/Skeleton";
 import Titles from "../../components/Titles";
 import { imageUrl } from "./images";
 import classes from "./style.module.scss";
+import Image from "next/image";
 
 const Skills = () => {
 	return (
@@ -12,7 +13,7 @@ const Skills = () => {
 				{imageUrl.map(e => {
 					return (
 						<div key={e.url} className={classes["skill-card"]}>
-							<img src={e.url} alt={e.name} className={classes["img"]} />
+							<Image src={e.url} alt={e.name} className={classes["img"]} height="100%" width="100%" />
 							<p>{e.name}</p>
 							<Skeleton
 								animation='wave'

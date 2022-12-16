@@ -4,6 +4,7 @@ import Titles from "../../components/Titles";
 import { imageUrl } from "./content";
 import classes from "./style.module.scss";
 import Button from "@mui/material/Button";
+import Image from "next/image";
 
 const Specialization = () => {
 	return (
@@ -13,7 +14,7 @@ const Specialization = () => {
 				{imageUrl.map(e => {
 					return (
 						<div key={e.url} className={classes["skill-card"]}>
-							<img src={e.url} alt={e.name} className={classes["img"]} />
+							<Image src={e.url} alt={e.name} className={classes["img"]} height="100%" width="100%" />
 							<p>{e.name}</p>
 						</div>
 					);
