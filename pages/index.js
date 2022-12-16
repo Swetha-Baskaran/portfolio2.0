@@ -14,7 +14,7 @@ export default function Home() {
 				<link rel='icon' href='/favicon.jpg' />
 			</Head>
 			<main className='main'>
-				<Navbar />
+				{/* <Navbar /> */}
 				<HeroPage />
 				<div className="section">
 					<AboutMe />

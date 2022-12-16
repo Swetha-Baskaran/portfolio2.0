@@ -14,7 +14,7 @@ export default function skills() {
 				<link rel='icon' href='/favicon.jpg' />
 			</Head>
 			<main className='main'>
-				<Navbar />
+				{/* <Navbar /> */}
 				<div className="section">
 					{/* <Services /> */}
 					{/* <Specialization /> */}
