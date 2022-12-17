@@ -118,10 +118,13 @@
 }
 @media (max-width: 1550px) {
 	.myVideo {
-		bottom: 0;
+		bottom: -70px;
 	}
 }
 @media (max-width: 750px) {
+	.myVideo {
+		bottom: 0;
+	}
 	.home-partition {
 		flex-direction: column;
 		justify-content: center;
@@ -139,7 +142,7 @@
 }
 @media (max-width: 500px) {
 	.myVideo {
-		top: -20px;
+		top: -310px;
 		width: 160%;
 	}
 }
