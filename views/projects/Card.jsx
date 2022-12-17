@@ -9,7 +9,7 @@ import { FiGithub } from "react-icons/fi";
 import classes from "./style.module.scss";
 import Image from "next/image";
 
-const IndividualProject = ({ handleOpen }) => {
+const IndividualProject = ({ handleOpen, imgUrl }) => {
 	return (
 		<Card
 			onClick={handleOpen}
@@ -18,10 +18,11 @@ const IndividualProject = ({ handleOpen }) => {
 			style={customStyle.individualCard}>
 			<div className={classes["card-img-hold"]}>
 				<Image
-					src='/assets/gatsby-hospital-landing-page.png'
+					src={imgUrl}
 					alt=''
 					className={classes["card-img"]}
 					layout="fill"
+					style={{padding: "0 1rem"}}
 				/>
 				<div className={classes["link-btns"]}>
 					<FiGithub className={classes["btns"]} />
