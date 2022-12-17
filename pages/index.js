@@ -4,6 +4,10 @@ import AboutMe from "../views/about/AboutMe";
 import HeroPage from "../views/HeroPage/HeroPage";
 import Projects from "../views/projects/Projects";
 import Navbar from "../components/Navbar"
+import { ElevationScroll } from "../components/Navbar";
+import Skills from "../views/skills/Skills";
+import Contacts from "../views/contacts/Contacts";
+import Services from "../views/services/Services";
 
 export default function Home() {
 	return (
@@ -14,15 +18,19 @@ export default function Home() {
 				<link rel='icon' href='/favicon.jpg' />
 			</Head>
 			<main className='main'>
-				{/* <Navbar /> */}
+				<Navbar />
 				<HeroPage />
 				<div className="section">
 					<AboutMe />
+					<Services />
 					<Projects />
+					<Contacts />
 					<Footer />
 				</div>
 			</main>
 		</div>
 	);
 }
+
+
 // https://jacekjeznach.com/about

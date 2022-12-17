@@ -31,8 +31,16 @@ export const imageUrl = [
         name: "c++",
         url: "/assets/skills/c-.png",
     },
-    // {
-    //     name: "Python",
-    //     url: "/assets/skills/py.png",
-    // },
+    {
+        name: "MySql",
+        url: "/assets/skills/mysql.png",
+    },
+    {
+        name: "Typescript",
+        url: "/assets/skills/typescript.png",
+    },
+    {
+        name: "c++",
+        url: "/assets/skills/c-.png",
+    }
 ]

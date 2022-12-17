@@ -3,16 +3,17 @@
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
-	padding: 2rem 2rem 2rem 5rem;
+	padding: 2rem 4rem 2rem 4rem;
 	.about-me {
-		flex: 50%;
-		margin: 3rem 0 3rem 3rem;
+		flex: 65%;
+		margin: 3rem 0rem 3rem 0;
 		.about-heading {
 			transform: translateY(-14px);
 			font-size: 2rem;
 			color: #5000ca;
 		}
 		.about-content {
+			width: 90%;
 			padding: 0 0 1rem 0;
 			font-size: 1.2rem;
 			font-weight: 500;
@@ -37,14 +38,15 @@
 		}
 	}
 	.qualification {
-		flex: 45%;
-		padding: 2rem 2rem 2rem 7rem;
+		flex: 35%;
+		padding: 2rem 0rem 2rem 0rem;
 		.description {
+			text-align: left;
 			display: flex;
 			align-items: center;
 			color: #000;
 			h2 {
-				font-size: 1.7rem;
+				font-size: 1.4rem;
 				font-weight: 400;
 				color: #5000ca;
 			}
@@ -67,9 +69,23 @@
 	.about-hold {
 		height: auto;
 		flex-direction: column;
-		align-items: flex-start;
+		align-items: center;
+		justify-content: center;
+		padding: 2rem;
+		.about-me{
+			padding: 0;
+			margin: 0;
+			width: 100%;
+			.about-content{
+				width: 100%;
+			}
+		}
 		.qualification {
-			padding: 4rem 2rem 4rem 4rem;
+			text-align: center;
+			padding: 4rem 2rem 0rem 2rem;
+			.aboutImg{
+				width: 90%;
+			}
 		}
 	}
 }
@@ -77,7 +93,7 @@
 @media (max-width: 850px) {
 	.about-hold {
 		.qualification {
-			padding: 4rem 2rem 4rem 4rem;
+			padding: 4rem 2rem 0rem 2rem;
 			.description {
 				.icon {
 					font-size: 4rem;
@@ -115,9 +131,12 @@
 
 @media (max-width: 650px) {
 	.about-hold {
-		padding: 2rem 0rem 2rem 4rem;
+		padding: 2rem 2rem 2rem 2rem;
 		.qualification {
-			padding: 4rem 2rem 4rem 3rem;
+			padding: 2rem 2rem 0rem 3rem;
+			.aboutImg{
+				width: 100%;
+			}
 			.description {
 				.icon {
 					font-size: 3rem;
@@ -139,9 +158,10 @@
 }
 @media (max-width: 600px){
 	.about-hold{
-		padding: 2rem 0rem;
+		padding: 2rem 2rem;
 		.qualification{
-			padding: 1rem 2rem 4rem 3rem;
+			font-size: 90%;
+			padding: 1rem 0rem 1rem 0rem;
 		}
 	}
 }

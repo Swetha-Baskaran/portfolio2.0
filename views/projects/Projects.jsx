@@ -4,36 +4,24 @@ import IndividualProject from "./Card";
 import classes from "./style.module.scss";
 import Grid from "@mui/material/Grid";
 import Titles from "../../components/Titles";
-import { ProjectUrl } from "../../data/projects";
-import ProjectModal from "../../components/ProjectDetails";
+import Button from "@mui/material/Button";
+import { Typography } from "@mui/material";
 
 const Projects = () => {
-	const [open, setOpen] = useState(false);
-	const handleOpen = () => setOpen(true);
-	const handleClose = () => setOpen(false);
 	return (
 		<>
 			<div className={classes["project-container"]}>
-				<Titles name='What I did.' />
+				<Titles name='My Recent Works.' />
+				<Typography>Here are few projects I have worked on recently.</Typography>
 				<Grid container className={classes["grid"]}>
-					{[1, 2, 3, 4, 5, 6].map((e, index) => {
-						return (
-							<IndividualProject handleOpen={handleOpen} key={index} />
-						);
+					{[1, 2, 3].map((e, index) => {
+						return <IndividualProject key={index} />;
 					})}
 				</Grid>
-				<Pagination
-					count={2}
-					variant='outlined'
-					color='primary'
-					className={classes["pagnation"]}
-				/>
+				<Button variant='outlined' href='/skills' className={classes["link"]}>
+					See More
+				</Button>
 			</div>
-			<ProjectModal
-				open={open}
-				handleClose={handleClose}
-				handleOpen={handleOpen}
-			/>
 		</>
 	);
 };

@@ -1,28 +1,10 @@
-import { useState } from "react";
-import { FaMoon } from "react-icons/fa"
-import { BsSunFill } from "react-icons/bs"
 import classes from "./style.module.scss";
 import BouncingArrow from "../../components/BouncingArrow";
 
 const HeroPage = () => {
-	let [mode, setMode] = useState("Day");
-	const handleMode = () => {
-		mode == "Day" ? setMode("Night") : setMode("Day");
-	};
 	return (
 		<>
 			<div className={classes["header"]}>
-				<div
-					className={classes["modeToggler"]}
-					onClick={() => {
-						handleMode();
-					}}>
-						{
-							mode == "Day" ?
-							<BsSunFill /> :
-							<FaMoon />
-						}
-					</div>
 				<video autoPlay muted loop className={classes["myVideo"]}>
 					<source src='assets/videos/mobilevideo.mp4' type='video/mp4' />
 				</video>
@@ -34,7 +16,7 @@ const HeroPage = () => {
 						</p>
 						<br />
 						<h1 className={classes["title"]}>
-							SWETHA <br /> BASKARAN
+							SWETHA.
 						</h1>
 						<h3 className={classes["loader"]}>
 							<span className={classes["m"]}>a</span>
@@ -63,14 +45,22 @@ const HeroPage = () => {
 							I like to design and code user-friendly websites. Nice to
 							meet you.
 						</p>
-						<BouncingArrow />
+						{/* <BouncingArrow /> */}
 						{/* <div className={classes["learn-more-hold"]}>
 							<Button className={classes["learn-more"]}>
 								Learn More
 							</Button>
 						</div> */}
 					</section>
-					<div></div>
+					<div className={classes["heroImg-hold"]}>
+						{/* <img
+							src='/assets/heroImg.jpg'
+							alt=''
+							width='100'
+							height='100'
+							style={customStyles.heroImg}
+						/> */}
+					</div>
 				</div>
 			</div>
 		</>
@@ -78,3 +68,12 @@ const HeroPage = () => {
 };
 
 export default HeroPage;
+
+const customStyles = {
+	heroImg: {
+		width: "100%",
+		height: "100%",
+		borderRadius: "50%",
+		visibility: "hidden",
+	},
+};

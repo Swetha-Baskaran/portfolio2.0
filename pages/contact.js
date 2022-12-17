@@ -12,7 +12,7 @@ export default function Contact() {
 				<link rel='icon' href='/favicon.jpg' />
 			</Head>
 			<main className='main'>
-				{/* <Navbar /> */}
+				<Navbar />
 				<div className="section">
 					<Contacts />
 					<Footer />

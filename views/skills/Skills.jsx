@@ -8,12 +8,11 @@ import Image from "next/image";
 const Skills = () => {
 	return (
 		<div className={classes["skill-hold"]}>
-			<Titles name='What i do.' />
 			<Grid container className={classes["skill-card-hold"]}>
 				{imageUrl.map(e => {
 					return (
 						<div key={e.url} className={classes["skill-card"]}>
-							<Image src={e.url} alt={e.name} className={classes["img"]} height="100%" width="100%" />
+							<Image src={e.url} alt={e.name} className={classes["img"]} height="50%" width="50%" />
 							<p>{e.name}</p>
 							<Skeleton
 								animation='wave'
