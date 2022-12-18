@@ -1,15 +1,12 @@
 import * as React from "react";
-import PropTypes from "prop-types";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
-import CssBaseline from "@mui/material/CssBaseline";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
 import { GrClose } from "react-icons/gr";
 import IconButton from "@mui/material/IconButton";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
 import MenuIcon from "@mui/icons-material/Menu";
 import Button from "@mui/material/Button";
@@ -31,23 +28,6 @@ function HideOnScroll(props) {
 	);
 }
 
-
-function ElevationScroll(props) {
-	const { children, window } = props;
-	// Note that you normally won't need to set the window ref as useScrollTrigger
-	// will default to window.
-	// This is only being set here because the demo is in an iframe.
-	const trigger = useScrollTrigger({
-		disableHysteresis: true,
-		threshold: 0,
-		target: window ? window() : undefined,
-	});
-
-	return React.cloneElement(children, {
-		elevation: trigger ? 4 : 0,
-	});
-}
-
 export default function Navbar(props) {
 	const { window } = props;
 	const trigger = useScrollTrigger({
@@ -56,7 +36,7 @@ export default function Navbar(props) {
 		target: window ? window() : undefined,
 	});
 	const drawerWidth = "100%";
-	const navItems = ["Home", "About", "Contact"];
+	const navItems = ["Home", "About", "Skills", "Projects", "Contact"];
 
 	const [mobileOpen, setMobileOpen] = React.useState(false);
 
@@ -93,11 +73,12 @@ export default function Navbar(props) {
 
 	return (
 		<>
-			{/* <ElevationScroll style={customStyles.elevation} {...props}> */}
-				<HideOnScroll {...props}>
+			<HideOnScroll {...props}>
 				<AppBar
 					style={{
-						backgroundColor: trigger ? "#fff" : "rgba(255, 255, 255, 0.806)",
+						backgroundColor: trigger
+							? "#fff"
+							: "rgba(255, 255, 255, 0.806)",
 						boxShadow: trigger
 							? "5px 0px 27px -5px rgba(0, 0, 0, 0.3) !important"
 							: "none",
@@ -117,12 +98,13 @@ export default function Navbar(props) {
 							sx={{
 								flexGrow: 1,
 								display: { xs: "none", sm: "block" },
+								color: "black"
 							}}>
-							MUI
+							SWE.
 						</Typography>
 						<Box sx={{ display: { xs: "none", sm: "block" } }}>
 							{navItems.map(item => (
-								<Button key={item} sx={{ color: "#fff" }}>
+								<Button key={item}>
 									{item}
 								</Button>
 							))}
@@ -132,8 +114,7 @@ export default function Navbar(props) {
 						</Box>
 					</Toolbar>
 				</AppBar>
-				</HideOnScroll>
-			{/* </ElevationScroll> */}
+			</HideOnScroll>
 			<Toolbar />
 			<Box component='nav'>
 				<SwipeableDrawer

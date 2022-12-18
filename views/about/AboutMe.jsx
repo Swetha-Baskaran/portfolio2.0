@@ -4,6 +4,7 @@ import { FaUniversity } from "react-icons/fa";
 import { BsGraphUp } from "react-icons/bs";
 import Skills from "../skills/Skills"
 import { Button } from "@mui/material";
+import  Title  from "../../components/Titles";
 
 const AboutMe = () => {
 	return (
@@ -48,10 +49,8 @@ const AboutMe = () => {
 			</div>
 			<div className={classes["about-hold"]}>
 				<div className={classes["about-me"]}>
-					<div className={classes["about-heading"]}>Skill Set	.</div>
+					<div className={classes["about-heading"]}>What I’m Made Of	.</div>
 					<Skills />
-					{/* <p className={classes["about-content"]}>
-						</p> */}
 				</div>
 				<div className={classes["qualification"]}>
 					<div className={classes["description"]}>
@@ -67,6 +66,13 @@ const AboutMe = () => {
 							<h2>B.Tech Student</h2>
 							<p>Information Technology</p>
 							<p>Puducherry Technological Univesity</p>
+						</div>
+					</div>
+					<div className={classes["description"]}>
+						<BsGraphUp className={classes["icon"]} />
+						<div className={classes["content"]}>
+							<h2>Learning</h2>
+							<p>Node Js</p>
 						</div>
 					</div>
 					<div className={classes["description"]}>

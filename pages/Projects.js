@@ -1,9 +1,9 @@
 import Head from "next/head";
 import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
-import Contacts from "../views/contacts/Contacts";
+import Navbar from "../components/Navbar"
+import Projects from "../views/projects/Projects";
 
-export default function Contact() {
+export default function ProjectPage() {
 	return (
 		<div>
 			<Head>
@@ -14,7 +14,7 @@ export default function Contact() {
 			<main className='main'>
 				<Navbar />
 				<div className="section">
-					<Contacts />
+					<Projects />
 					<Footer />
 				</div>
 			</main>

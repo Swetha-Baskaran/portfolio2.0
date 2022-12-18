@@ -13,6 +13,7 @@
 	left: 50px;
 	top: 45px;
 	.icon {
+		color: black;
 		font-size: 2.3rem;
 	}
 }
@@ -99,6 +100,32 @@
 	font-size: 2rem;
 }
 
+//progressBar
+.progressBarHold{
+	display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+	.ParentDiv{
+		height: 5px;
+		width: 100%;
+		background-color: whitesmoke;
+		border-radius: 10px 0 10px 0;
+		.ChildDiv{
+			height: 100%;
+			background-color: #5000ca;
+			border-radius: 10px 0 10px 0;
+			text-align: right;
+		}
+	}
+	.progressText{
+		padding: 0 0 0 1rem;
+		color: black;
+		font-weight: 500;
+		font-size: 0.8rem;
+	}
+}
+
 //footer
 .footer {
 	position: relative;
@@ -167,6 +194,12 @@
 				}
 			}
 		}
+	}
+}
+
+@media(max-width: 950px) {
+	.progressBarHold{
+		width: 100%;
 	}
 }
 

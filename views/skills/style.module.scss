@@ -6,69 +6,28 @@
 	background-color: #fff;
 }
 .skill-hold {
+	padding-top: 2rem;
 	.skill-card-hold {
-		display: flex;
-		justify-content: flex-start;
-		align-items: center;
-		width: 90%;
-		margin-top: 2rem;
 		.skill-card {
-			overflow: hidden;
-			position: relative;
-			cursor: pointer;
-			width: max-content;
 			display: flex;
-			flex-direction: column;
-			justify-content: flex-start;
-			align-items: center;
-			padding: 1rem 1rem 0 1rem;
-			height: max-content;
-			margin: 0.5rem 1rem 0.5rem 0;
-			border-radius: 10px 0 10px 0;
-			border: 1px solid rgba(0, 0, 0, 0.114);
-			
-			.skeleton {
-				position: absolute;
-				width: 23rem;
-				transform: rotate(45deg);
-				height: 22rem;
-				top: 0;
-				z-index: -1;
-				background-color: #e4d2d226;
-			}
+            width: 90%;
+			justify-content: space-between;
+			align-items: center;		
 		}
 	}
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 950px) {
 	.skill-hold {
 		.skill-card-hold {
-			padding: 0;
-			.skill-card {
-				margin: 0.5rem;
+			.skill-card{
+				flex-direction: column;
+				justify-content: center;
+				align-items: flex-start;
+				width: 100%;
 			}
+
 		}
 	}
 }
 
-@media (max-width: 550px) {
-	.skill-hold {
-		.skill-card-hold {
-			.skill-card {
-				padding: 1rem 0.6rem 0 0.6rem;
-				width: max-content;
-			}
-		}
-	}
-}
-
-// @media (max-width: 400px){
-// 	.skill-hold{
-// 		.skill-card-hold{
-// 			.skill-card{
-// 				padding: 1rem 0.6rem 0 0.6rem;
-// 				width
-// 			}
-// 		}
-// 	}
-// }

@@ -1,46 +1,43 @@
-export const imageUrl = [
+export const SkillsData = [
     {
         name: "React Js",
-        url: "/assets/skills/react.jpg",
+        progress: "95",
     },
     {
         name: "Redux",
-        url: "/assets/skills/redux.jpg",
+        progress: "70",
     },
     {
-        name: "Sass",
-        url: "/assets/skills/sass.png",
+        name: "Next Js",
+        progress: "85",
     },
     {
-        name: "Css",
-        url: "/assets/skills/css-3.png",
+        name: "Javascript",
+        progress: "90",
     },
     {
-        name: "Github",
-        url: "/assets/skills/github.png",
+        name: "Material UI",
+        progress: "90",
     },
     {
-        name: "MySql",
-        url: "/assets/skills/mysql.png",
+        name: "Tailwind Css",
+        progress: "90",
     },
     {
-        name: "Typescript",
-        url: "/assets/skills/typescript.png",
-    },
-    {
-        name: "c++",
-        url: "/assets/skills/c-.png",
+        name: "Node Js",
+        progress: "50",
     },
     {
         name: "MySql",
-        url: "/assets/skills/mysql.png",
+        progress: "60",
     },
     {
-        name: "Typescript",
-        url: "/assets/skills/typescript.png",
+        name: "MongoDB",
+        progress: "70",
     },
     {
-        name: "c++",
-        url: "/assets/skills/c-.png",
-    }
+        name: "Python",
+        progress: "50",
+    },
+    
 ]

@@ -15,11 +15,11 @@ const Projects = () => {
 				<Titles name='My Recent Works.' />
 				<Typography>Here are few projects I have worked on recently.</Typography>
 				<Grid container className={classes["grid"]}>
-					{ProjectUrl.map((e, index) => {
+					{ProjectUrl.slice(0,3).map((e, index) => {
 						return <IndividualProject key={index} imgUrl={e.img} />;
 					})}
 				</Grid>
-				<Button variant='outlined' href='/skills' className={classes["link"]}>
+				<Button variant='outlined' href='/Projects' className={classes["link"]}>
 					See More
 				</Button>
 			</div>
