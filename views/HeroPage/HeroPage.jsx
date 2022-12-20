@@ -1,4 +1,6 @@
 import classes from "./style.module.scss";
+// import BouncingArrow from "../../components/BouncingArrow"
+import { Button } from "@mui/material";
 
 const HeroPage = () => {
 	return (
@@ -43,11 +45,14 @@ const HeroPage = () => {
 							meet you.
 						</p>
 						{/* <BouncingArrow /> */}
-						{/* <div className={classes["learn-more-hold"]}>
+						<div className={classes["learn-more-hold"]}>
 							<Button className={classes["learn-more"]}>
-								Learn More
+								Download CV
 							</Button>
-						</div> */}
+							<Button className={classes["learn-more"]}>
+								View Projects
+							</Button>
+						</div>
 					</section>
 					<div className={classes["heroImg-hold"]}>
 						{/* <img
