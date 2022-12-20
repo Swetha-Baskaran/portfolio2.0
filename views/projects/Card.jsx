@@ -12,6 +12,7 @@ import Image from "next/image";
 const IndividualProject = ({ handleOpen, imgUrl }) => {
 	return (
 		<Card
+			data-aos='fade-down'
 			onClick={handleOpen}
 			sx={{ maxWidth: 360 }}
 			className={classes["individual-card"]}
@@ -21,8 +22,8 @@ const IndividualProject = ({ handleOpen, imgUrl }) => {
 					src={imgUrl}
 					alt=''
 					className={classes["card-img"]}
-					layout="fill"
-					style={{padding: "0 1rem"}}
+					layout='fill'
+					style={{ padding: "0 1rem" }}
 				/>
 				<div className={classes["link-btns"]}>
 					<FiGithub className={classes["btns"]} />

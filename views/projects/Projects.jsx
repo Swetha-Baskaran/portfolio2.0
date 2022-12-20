@@ -13,7 +13,7 @@ const Projects = () => {
 		<>
 			<div className={classes["project-container"]}>
 				<Titles name='My Recent Works.' />
-				<Typography>Here are few projects I have worked on recently.</Typography>
+				<Typography data-aos="fade-down">Here are few projects I have worked on recently.</Typography>
 				<Grid container className={classes["grid"]}>
 					{ProjectUrl.slice(0,3).map((e, index) => {
 						return <IndividualProject key={index} imgUrl={e.img} />;

@@ -13,7 +13,7 @@ const Skills = () => {
 			<Box container className={classes["skill-card-hold"]}>
 				{SkillsData.map(e => {
 					return (
-						<div key={e.url} className={classes["skill-card"]}>
+						<div key={e.url} className={classes["skill-card"]}  data-aos="fade-down">
 							<p>{e.name}</p>
 							<ProgressBar progress={e.progress} />
 						</div>

@@ -52,6 +52,7 @@ export default function Navbar(props) {
 			<List sx={{ textAlign: "center" }}>
 				{navItems.map(item => (
 					<ListItem
+						data-aos='fade-down'
 						key={item}
 						sx={{
 							textAlign: "center",
@@ -84,27 +85,21 @@ export default function Navbar(props) {
 							: "none",
 					}}>
 					<Toolbar>
-						<IconButton
-							color='inherit'
-							aria-label='open drawer'
-							edge='start'
-							onClick={handleDrawerToggle}
-							sx={{ mr: 2, display: { sm: "none" } }}>
-							<MenuIcon />
-						</IconButton>
 						<Typography
 							variant='h6'
 							component='div'
 							sx={{
 								flexGrow: 1,
-								display: { xs: "none", sm: "block" },
-								color: "black"
+								display: {sm: "block" },
+								color: "black",
 							}}>
-							SWE.
+							{"<Swe />"}
 						</Typography>
 						<Box sx={{ display: { xs: "none", sm: "block" } }}>
 							{navItems.map(item => (
-								<Button key={item}>
+								<Button
+									style={{ color: "black", padding: "0 1.3rem" }}
+									key={item}>
 									{item}
 								</Button>
 							))}
@@ -112,6 +107,14 @@ export default function Navbar(props) {
 						<Box sx={{ display: { xs: "none", sm: "block" } }}>
 							<ThemeSwitch />
 						</Box>
+						<IconButton
+							color='inherit'
+							aria-label='open drawer'
+							edge='start'
+							onClick={handleDrawerToggle}
+							sx={{ color: "black", display: { sm: "none" } }}>
+							<MenuIcon />
+						</IconButton>
 					</Toolbar>
 				</AppBar>
 			</HideOnScroll>

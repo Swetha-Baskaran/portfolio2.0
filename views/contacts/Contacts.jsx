@@ -8,8 +8,8 @@ const Contacts = () => {
 	return (
 		<div className={classes["contacts-hold"]}>
 			<div className={classes["contacts"]}>
-				<Titles name='Get in touch.' />
-				<p>Fill in the form to get in contact with me.</p>
+				<Titles name='Get in touch.'/>
+				<p  data-aos="fade-down">Fill in the form to get in contact with me.</p>
 				<div className={classes["my-contacts"]}>
 					{[
 						"swethasambothi@gmail.com",
@@ -17,7 +17,7 @@ const Contacts = () => {
 						"Puducherry, India",
 					].map((e, index) => {
 						return (
-							<div className={classes["items"]} key={index}>
+							<div className={classes["items"]} key={index}  data-aos="fade-down">
 								<GoMail className={classes["icon"]} />
 								<p>{e}</p>
 							</div>

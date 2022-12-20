@@ -13,6 +13,7 @@ const Form = () => {
 				autoComplete='current-password'
 				className={classes["text-field"]}
 				variant='filled'
+				data-aos="fade-down"
 			/>
 			<TextField
 				id='filled-password-input'
@@ -21,6 +22,7 @@ const Form = () => {
 				autoComplete='current-password'
 				className={classes["text-field"]}
 				variant='filled'
+				data-aos="fade-down"
 			/>
 			<TextField
 				id='filled-multiline-static'
@@ -29,10 +31,12 @@ const Form = () => {
 				rows={5}
 				className={classes["text-field"]}
 				variant='filled'
+				data-aos="fade-down"
 			/>
 			<Button
 				className={classes["button"]}
 				variant='contained'
+				 data-aos="fade-down"
 				endIcon={<SendIcon />}>
 				Send
 			</Button>

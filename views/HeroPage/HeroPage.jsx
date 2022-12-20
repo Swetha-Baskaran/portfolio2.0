@@ -1,5 +1,4 @@
 import classes from "./style.module.scss";
-import BouncingArrow from "../../components/BouncingArrow";
 
 const HeroPage = () => {
 	return (
@@ -15,9 +14,7 @@ const HeroPage = () => {
 							<span className={classes["side-line"]}></span>
 						</p>
 						<br />
-						<h1 className={classes["title"]}>
-							SWETHA.
-						</h1>
+						<h1 className={classes["title"]}>SWETHA.</h1>
 						<h3 className={classes["loader"]}>
 							<span className={classes["m"]}>a</span>
 							<span className={classes["m"]}>&nbsp;</span>

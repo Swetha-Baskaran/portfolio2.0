@@ -22,7 +22,7 @@
 	cursor: pointer;
 	.card-title{
 		font-size: 1.5rem;
-		padding: 0.8rem 1rem 0.2rem 1.1rem;
+		padding: 0rem 1rem 0.2rem 1.1rem;
 	}
 	.card-img-hold {
 		position: relative;
@@ -55,6 +55,7 @@
 				border-radius: 50%;
 				font-size: 2.5rem;
 				box-shadow: 0 0 0 3.5px #673ab7;
+				box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
 				cursor: pointer;
 				transition: 4s ease;
 				opacity: 0;

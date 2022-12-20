@@ -1,15 +1,21 @@
+import { useEffect } from "react";
 import Head from "next/head";
 import Footer from "../components/Footer";
 import AboutMe from "../views/about/AboutMe";
 import HeroPage from "../views/HeroPage/HeroPage";
 import Projects from "../views/projects/Projects";
-import Navbar from "../components/Navbar"
-import { ElevationScroll } from "../components/Navbar";
-import Skills from "../views/skills/Skills";
+import Navbar from "../components/Navbar";
 import Contacts from "../views/contacts/Contacts";
 import Services from "../views/services/Services";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 export default function Home() {
+	useEffect(() => {
+		Aos.init({
+			delay: 500,
+		});
+	});
 	return (
 		<div>
 			<Head>
@@ -20,7 +26,7 @@ export default function Home() {
 			<main className='main'>
 				<Navbar />
 				<HeroPage />
-				<div className="section">
+				<div className='section'>
 					<AboutMe />
 					<Services />
 					<Projects />
@@ -31,6 +37,3 @@ export default function Home() {
 		</div>
 	);
 }
-
-
-// https://jacekjeznach.com/about
