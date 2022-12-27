@@ -53,6 +53,7 @@ const HeroPage = () => {
 						</div>
 					</section>
 					<div className={classes["heroImg-hold"]}>
+						<img alt="" src='/assets/developer.png' />
 					</div>
 				</div>
 			</div>

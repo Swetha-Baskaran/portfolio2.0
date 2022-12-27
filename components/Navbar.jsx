@@ -52,17 +52,20 @@ export default function Navbar(props) {
 				<GrClose onClick={handleDrawerToggle} />
 			</Typography>
 			<List sx={{textAlign: "center"}}>
-				{Router.pathname === "/Projects" ? navItems.map(item => (
+				{Router.pathname !== "/Projects" ? navItems.map(item => (
 					<ListItem
 						data-aos='fade-down'
 						key={item.menu}
 						sx={{
 							textAlign: "center",
 							margin: "2rem 0",
+							width: '100%',
 							padding: "0 1rem",
+							justifyContent: 'center',
+							curor: 'pointer'
 						}}
 					>
-						<AnchorLink href={item.link}>
+						<AnchorLink href={item.link} >
 							<ListItemText
 								sx={{
 									textAlign: "center",
@@ -73,9 +76,21 @@ export default function Navbar(props) {
 						</AnchorLink>
 					</ListItem>
 				)):
-				<ListItem>
-					<ListItemText primary={"Back To Home"} href="/" />
-				</ListItem>}
+				<ListItem sx={{
+					textAlign: "center",
+					margin: "2rem 0",
+					width: '100%',
+					padding: "0 1rem",
+					justifyContent: 'center',
+					curor: 'pointer'
+				}}>
+					<ListItemText primary={"Back To Home"} 
+					  onClick={handleDrawerToggle}
+					  sx={{
+					  		textAlign: "center",
+					  		curor: 'pointer'
+					  	}} href="/" />
+				    </ListItem>}
 			</List>
 			<div style={customStyles.switchHold}>
 				<ThemeSwitch sx={{textAlign: "center"}} />

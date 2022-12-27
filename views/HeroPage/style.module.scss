@@ -33,9 +33,7 @@
 	align-items: center;
 	padding: 0rem 3rem;
 	.heroImg-hold{
-		width: 20rem;
-		height: 20rem;
-		border-radius: 50%;
+		display: none;
 	}
 }
 .nav {
@@ -138,12 +136,20 @@
 	}
 }
 @media (max-width: 750px) {
+	.header{
+		height: 120vh;
+	}
 	.myVideo {
 		bottom: 0;
 	}
 	.home-partition {
+		flex-direction: column-reverse;
 		justify-content: center;
 		align-items: center;
+		height: 120vh;
+		.heroImg-hold{
+			display: block;
+		}
 	}
 	.intro-text,
 	.nav .title {
