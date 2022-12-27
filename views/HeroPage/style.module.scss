@@ -137,7 +137,7 @@
 }
 @media (max-width: 750px) {
 	.header{
-		height: 120vh;
+		height: 110vh;
 	}
 	.myVideo {
 		bottom: 0;
@@ -146,9 +146,13 @@
 		flex-direction: column-reverse;
 		justify-content: center;
 		align-items: center;
-		height: 120vh;
+		height: 110vh;
 		.heroImg-hold{
-			display: block;
+			display: flex;
+            justify-content: center;
+			.image{
+				width: 130%;
+			}
 		}
 	}
 	.intro-text,
@@ -184,7 +188,6 @@
 @media (max-width: 450px) {
 	.nav {
 		height: auto;
-		// padding: 5rem 0;
 	}
 	.m {
 		font-size: 3.1vw;
