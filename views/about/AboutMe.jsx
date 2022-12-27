@@ -9,7 +9,7 @@ import Title from "../../components/Titles";
 const AboutMe = () => {
 	return (
 		<>
-			<div className={classes["about-hold"]}>
+			<div className={classes["about-hold"]} id="About">
 				<div className={classes["about-me"]}>
 					<div className={classes["about-heading"]} data-aos='fade-down'>
 						Bit about me
@@ -30,9 +30,6 @@ const AboutMe = () => {
 					technologies. That's all about my short story.I was passionated on
 					programming and having the ability to solve problems.`}
 					</p>
-					{/* <Button  data-aos="fade-down" variant='outlined' style={customStyles.downloadBtn}>
-						Download CV
-					</Button> */}
 				</div>
 				<div  data-aos="fade-down" className={classes["qualification"]}>
 					<img
@@ -44,7 +41,7 @@ const AboutMe = () => {
 					/>
 				</div>
 			</div>
-			<div className={classes["about-hold"]}>
+			<div className={classes["about-hold"]} id="Skills">
 				<div className={classes["about-me"]}>
 					<div  data-aos="fade-down" className={classes["about-heading"]}>
 						What I’m Made Of .
@@ -72,13 +69,6 @@ const AboutMe = () => {
 						<div className={classes["content"]}>
 							<h2>Intrested in</h2>
 							<p>DevOps</p>
-						</div>
-					</div>
-					<div  data-aos="fade-down" className={classes["description"]}>
-						<BsGraphUp className={classes["icon"]} />
-						<div className={classes["content"]}>
-							<h2>Hobbies</h2>
-							<p>Pencil Art</p>
 						</div>
 					</div>
 				</div>

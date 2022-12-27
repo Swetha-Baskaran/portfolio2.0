@@ -19,6 +19,7 @@
             align-items: center;
             margin-top: 2rem;
             .items {
+                color: black;
                 cursor: pointer;
                 display: flex;
                 justify-content: left;
@@ -27,9 +28,10 @@
                 background: #66339926;
                 border-radius: 20px 0;
                 width: 100%;
-                border: 1px solid;
+                border: 1px solid #6426d4;
                 margin: 0.5rem 0;
                 .icon{
+                    color: #6426d4;
                     font-size: 1.5rem;
                     margin: 0 1rem;
                 }

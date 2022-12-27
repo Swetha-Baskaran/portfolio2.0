@@ -6,9 +6,9 @@ import HeroPage from "../views/HeroPage/HeroPage";
 import Projects from "../views/projects/Projects";
 import Navbar from "../components/Navbar";
 import Contacts from "../views/contacts/Contacts";
-import Services from "../views/services/Services";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import Services from "../views/services/Services";
 
 export default function Home() {
 	useEffect(() => {

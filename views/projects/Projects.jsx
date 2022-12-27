@@ -7,16 +7,19 @@ import Titles from "../../components/Titles";
 import Button from "@mui/material/Button";
 import { Typography } from "@mui/material";
 import { ProjectUrl } from "../../data/projects"
+import { useRouter } from 'next/router'
 
 const Projects = () => {
+	const Router = useRouter();
+	const Projects = Router.pathname === "/Projects" ? ProjectUrl : ProjectUrl.slice(0,5)
 	return (
 		<>
-			<div className={classes["project-container"]}>
+			<div className={classes["project-container"]} id="Projects">
 				<Titles name='My Recent Works.' />
 				<Typography data-aos="fade-down">Here are few projects I have worked on recently.</Typography>
 				<Grid container className={classes["grid"]}>
-					{ProjectUrl.slice(0,3).map((e, index) => {
-						return <IndividualProject key={index} imgUrl={e.img} />;
+					{Projects.map((e, index) => {
+						return <IndividualProject key={index} imgUrl={e.img} link={e.link} github={e.github} />;
 					})}
 				</Grid>
 				<Button variant='outlined' href='/Projects' className={classes["link"]}>

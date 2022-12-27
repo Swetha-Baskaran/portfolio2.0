@@ -1,7 +1,7 @@
 import Grid from "@mui/material/Grid";
 import Skeleton from "@mui/material/Skeleton";
 import Titles from "../../components/Titles";
-import { SkillsData } from "./images";
+import { SkillsData } from "../../data/images";
 import classes from "./style.module.scss";
 import Image from "next/image";
 import ProgressBar from "../../components/ProgressBar";

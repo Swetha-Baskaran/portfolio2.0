@@ -8,20 +8,19 @@
 	cursor: pointer;
 	max-width: 300px;
 	min-height: 250px;
-	background: #02b875;
-	padding: 30px;
 	border-radius: 3px;
 	box-sizing: border-box;
-	color: #fff;
+	color: black;
+	text-align: center;
+	padding: 3rem 1rem 0 1rem;
 	margin: 20px;
-	box-shadow: rgb(50 50 93 / 25%) 0px 30px 60px -12px,
-		rgb(0 0 0 / 30%) 0px 18px 36px -18px;
-}
-.card:nth-child(2) {
-	background: #4181ee;
-}
-.card:last-child {
-	background: #673ab7;
+	box-shadow: rgba(63, 63, 63, 0.166) 0px 30px 90px;
+	border-radius: 30px 0 30px 0;
+	&:hover{
+       background-color: rebeccapurple;
+	   color: white;
+	   transition: 0.5s;
+	}
 }
 .card-title {
 	margin-top: 0;
@@ -46,16 +45,8 @@
 	transition: all 0.5s;
 	cursor: pointer;
 	letter-spacing: 1.2px;
+	&:hover{
+		background: #fff;
+	}
 }
-.card-btn:hover {
-	color: #02b875;
-	background: #fff;
-}
-.card:nth-child(2) .card-btn:hover {
-	color: #4181ee;
-	background: #fff;
-}
-.card:last-child .card-btn:hover {
-	color: #673ab7;
-	background: #fff;
-}
+

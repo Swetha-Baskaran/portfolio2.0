@@ -6,7 +6,7 @@ import Divider from "@mui/material/Divider";
 
 const Contacts = () => {
 	return (
-		<div className={classes["contacts-hold"]}>
+		<div className={classes["contacts-hold"]} id="Contact">
 			<div className={classes["contacts"]}>
 				<Titles name='Get in touch.'/>
 				<p  data-aos="fade-down">Fill in the form to get in contact with me.</p>

@@ -1,11 +1,10 @@
 import classes from "./style.module.scss";
-// import BouncingArrow from "../../components/BouncingArrow"
 import { Button } from "@mui/material";
 
 const HeroPage = () => {
 	return (
 		<>
-			<div className={classes["header"]}>
+			<div className={classes["header"]} id="Home">
 				<video autoPlay muted loop className={classes["myVideo"]}>
 					<source src='assets/videos/mobilevideo.mp4' type='video/mp4' />
 				</video>
@@ -40,11 +39,10 @@ const HeroPage = () => {
 							<span className={classes["m"]}>E</span>
 							<span className={classes["m"]}>R</span>
 						</h3>
-						<p>
+						<p className={classes["p"]}>
 							I like to design and code user-friendly websites. Nice to
 							meet you.
 						</p>
-						{/* <BouncingArrow /> */}
 						<div className={classes["learn-more-hold"]}>
 							<Button className={classes["learn-more"]}>
 								Download CV
@@ -55,13 +53,6 @@ const HeroPage = () => {
 						</div>
 					</section>
 					<div className={classes["heroImg-hold"]}>
-						{/* <img
-							src='/assets/heroImg.jpg'
-							alt=''
-							width='100'
-							height='100'
-							style={customStyles.heroImg}
-						/> */}
 					</div>
 				</div>
 			</div>

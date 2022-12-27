@@ -1,7 +1,9 @@
 import Divider from "@mui/material/Divider";
 import Stack from "@mui/material/Stack";
 import classes from "./style.module.scss";
-import { BsLinkedin, BsInstagram, BsTwitter, BsGithub } from "react-icons/bs";
+import {BsLinkedin, BsInstagram, BsTwitter, BsGithub} from "react-icons/bs";
+import {navItems} from "../data/navItems";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const Footer = () => {
 	return (
@@ -45,12 +47,15 @@ const Footer = () => {
 									flexItem
 								/>
 							}
-							spacing={5}>
-							<div className={classes["navs"]}>Home</div>
-							<div className={classes["navs"]}>Projects</div>
-							<div className={classes["navs"]}>Details</div>
-							<div className={classes["navs"]}>Skills</div>
-							<div className={classes["navs"]}>Contact</div>
+							spacing={5}
+						>
+							{navItems.map((e, index) => {
+								return (
+									<AnchorLink href={e.link} key={index}>
+										<div className={classes["navs"]}>{e.menu}</div>
+									</AnchorLink>
+								);
+							})}
 						</Stack>
 					</div>
 				</div>

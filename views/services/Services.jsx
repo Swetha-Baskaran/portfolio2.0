@@ -1,34 +1,20 @@
-import Title from "../../components/Titles";
-import classes from "./style.module.scss"
+import Titles from "../../components/Titles";
+import { services } from "../../data/services";
+import classes from "./style.module.scss";
 
 const Services = () => {
 	return (
 		<div>
-			<div className={classes['wrapper']}>
-				<div className={classes['card']}  data-aos="fade-down">
-					<h3 className={classes['card-title']}>Web Developer</h3>
-					<p className={classes['card-content']}>
-						Contrary to popular belief, Lorem Ipsum is not simply random
-						text. It has roots in a piece of classical Latin literature
-						from 45 BC, making it over 2000 years old.
-					</p>
-				</div>
-				<div className={classes['card']}  data-aos="fade-down">
-					<h3 className={classes['card-title']}>UI designer</h3>
-					<p className={classes['card-content']}>
-						Contrary to popular belief, Lorem Ipsum is not simply random
-						text. It has roots in a piece of classical Latin literature
-						from 45 BC, making it over 2000 years old.
-					</p>
-				</div>
-				<div className={classes['card']}  data-aos="fade-down">
-					<h3 className={classes['card-title']}>MERN stack developer</h3>
-					<p className={classes['card-content']}>
-						Contrary to popular belief, Lorem Ipsum is not simply random
-						text. It has roots in a piece of classical Latin literature
-						from 45 BC, making it over 2000 years old.
-					</p>
-				</div>
+			<div className={classes["wrapper"]}>
+				<Titles name='Services.' />
+				{
+					services.map((e, index) => {
+						return  <div className={classes["card"]} data-aos='fade-down' key={index}>
+						           <h3 className={classes["card-title"]}>{e.service}</h3>
+						           <p className={classes["card-content"]}>{e.description}</p>
+					        </div>
+					})
+				}
 			</div>
 		</div>
 	);
