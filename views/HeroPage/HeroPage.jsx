@@ -11,7 +11,7 @@ const HeroPage = () => {
 				<div className={classes["home-partition"]}>
 					<section className={classes["nav"]}>
 						<p className={classes["intro-text"]}>
-							{"hey I'm"}
+							{"hi I'm"}
 							<span className={classes["side-line"]}></span>
 						</p>
 						<br />
@@ -47,7 +47,7 @@ const HeroPage = () => {
 							<Button className={classes["learn-more"]}>
 								Download CV
 							</Button>
-							<Button className={classes["learn-more"]}>
+							<Button className={classes["learn-more"]} href="#Projects">
 								View Projects
 							</Button>
 						</div>

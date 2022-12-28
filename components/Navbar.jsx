@@ -44,6 +44,7 @@ export default function Navbar(props) {
 
 	const handleDrawerToggle = () => {
 		setMobileOpen(prevState => !prevState);
+		Router.push("/")
 	};
     
 	const drawer = (
@@ -89,7 +90,7 @@ export default function Navbar(props) {
 					  sx={{
 					  		textAlign: "center",
 					  		curor: 'pointer'
-					  	}} href="/" />
+					  	}} />
 				    </ListItem>}
 			</List>
 			<div style={customStyles.switchHold}>
@@ -122,6 +123,9 @@ export default function Navbar(props) {
 								flexGrow: 1,
 								display: {md: "block"},
 								color: "black",
+							}}
+							onClick={()=>{
+								Router.push("/")
 							}}
 						>
 							{"<Swe />"}
