@@ -19,7 +19,7 @@ const Projects = () => {
 				<Typography data-aos="fade-down">Here are few projects I have worked on recently.</Typography>
 				<Grid container className={classes["grid"]}>
 					{Projects.map((e, index) => {
-						return <IndividualProject key={index} imgUrl={e.img} link={e.link} github={e.github} />;
+						return <IndividualProject key={index} data={e} />;
 					})}
 				</Grid>
 				<Button variant='outlined' href='/Projects' className={classes["link"]}>

@@ -4,6 +4,7 @@ import classes from "./style.module.scss";
 import {BsLinkedin, BsInstagram, BsTwitter, BsGithub} from "react-icons/bs";
 import {navItems} from "../data/navItems";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import { SocialLinks } from "../data/socialLinks";
 
 const Footer = () => {
 	return (
@@ -21,18 +22,18 @@ const Footer = () => {
 							<p>discuss with me</p>
 						</div>
 						<div className={classes["icon-hold"]}>
-							<div className={classes["icon"]}>
+							<a href={SocialLinks.linkedIn} className={classes["icon"]}>
 								<BsLinkedin />
-							</div>
-							<div className={classes["icon"]}>
+							</a>
+							<a href={SocialLinks.github} className={classes["icon"]}>
 								<BsGithub />
-							</div>
-							<div className={classes["icon"]}>
-								<BsInstagram />
-							</div>
-							<div className={classes["icon"]}>
+							</a>
+							<a href={SocialLinks.twitter} className={classes["icon"]}>
 								<BsTwitter />
-							</div>
+							</a>
+							<a href={SocialLinks.instagram} className={classes["icon"]}>
+								<BsInstagram />
+							</a>
 						</div>
 					</div>
 					<div className={classes["bottom-nav"]}>

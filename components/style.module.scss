@@ -184,6 +184,20 @@
 	}
 }
 
+//call dialouge
+.call-btn {
+	text-align: center;
+	border: 1px solid #5202ff;
+	border-radius: 10px 0 10px 0;
+	color: #5202ff;
+	margin: 0.5rem 0.3rem 0.5rem 0 ;
+	padding: 0.4rem 1.4rem ;
+	&:nth-child(2){
+		background-color:#5202ffda;
+		color: white;
+	}
+}
+
 @media (max-width: 1010px) {
 	.footer {
 		.footer-content {

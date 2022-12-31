@@ -15,8 +15,11 @@ import SwipeableDrawer from "@mui/material/SwipeableDrawer";
 import Slide from "@mui/material/Slide";
 import ThemeSwitch from "./ThemeSwitch";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import { navItems } from "../data/navItems";
-import { useRouter } from "next/router";
+import {navItems} from "../data/navItems";
+import {useRouter} from "next/router";
+import {useContext} from "react";
+import {ThemeContext} from "../pages/_app";
+import Link from "next/link";
 
 function HideOnScroll(props) {
 	const {children, window} = props;
@@ -32,7 +35,8 @@ function HideOnScroll(props) {
 }
 
 export default function Navbar(props) {
-	const Router = useRouter()
+	const [lightMode, setLightMode] = useContext(ThemeContext);
+	const Router = useRouter();
 	const {window} = props;
 	const trigger = useScrollTrigger({
 		disableHysteresis: true,
@@ -44,54 +48,62 @@ export default function Navbar(props) {
 
 	const handleDrawerToggle = () => {
 		setMobileOpen(prevState => !prevState);
-		Router.push("/")
 	};
-    
+
 	const drawer = (
 		<Box sx={{textAlign: "left", padding: "1rem 2rem"}}>
 			<Typography variant='h6' sx={{my: 2, fontSize: "2rem"}}>
 				<GrClose onClick={handleDrawerToggle} />
 			</Typography>
 			<List sx={{textAlign: "center"}}>
-				{Router.pathname !== "/Projects" ? navItems.map(item => (
+				{Router.pathname !== "/Projects" ? (
+					navItems.map(item => (
+						<ListItem
+							data-aos='fade-down'
+							key={item.menu}
+							sx={{
+								textAlign: "center",
+								margin: "2rem 0",
+								width: "100%",
+								padding: "0 1rem",
+								justifyContent: "center",
+								curor: "pointer",
+							}}
+						>
+							<AnchorLink href={item.link}>
+								<ListItemText
+									sx={{
+										textAlign: "center",
+									}}
+									primary={item.menu}
+									onClick={handleDrawerToggle}
+								/>
+							</AnchorLink>
+						</ListItem>
+					))
+				) : (
 					<ListItem
-						data-aos='fade-down'
-						key={item.menu}
 						sx={{
 							textAlign: "center",
 							margin: "2rem 0",
-							width: '100%',
+							width: "100%",
 							padding: "0 1rem",
-							justifyContent: 'center',
-							curor: 'pointer'
+							justifyContent: "center",
+							cursor: "pointer",
 						}}
 					>
-						<AnchorLink href={item.link} >
+						<Link href='/'>
 							<ListItemText
+								primary={"Back To Home"}
+								onClick={handleDrawerToggle}
 								sx={{
 									textAlign: "center",
+									cursor: "pointer",
 								}}
-								primary={item.menu}
-								onClick={handleDrawerToggle}
 							/>
-						</AnchorLink>
+						</Link>
 					</ListItem>
-				)):
-				<ListItem sx={{
-					textAlign: "center",
-					margin: "2rem 0",
-					width: '100%',
-					padding: "0 1rem",
-					justifyContent: 'center',
-					curor: 'pointer'
-				}}>
-					<ListItemText primary={"Back To Home"} 
-					  onClick={handleDrawerToggle}
-					  sx={{
-					  		textAlign: "center",
-					  		curor: 'pointer'
-					  	}} />
-				    </ListItem>}
+				)}
 			</List>
 			<div style={customStyles.switchHold}>
 				<ThemeSwitch sx={{textAlign: "center"}} />
@@ -124,21 +136,31 @@ export default function Navbar(props) {
 								display: {md: "block"},
 								color: "black",
 							}}
-							onClick={()=>{
-								Router.push("/")
+							onClick={() => {
+								Router.push("/");
 							}}
 						>
 							{"<Swe />"}
 						</Typography>
 						<Box sx={{display: {xs: "none", md: "block"}}}>
-							{navItems.map(item => (
+							{Router.pathname !== "/Projects" ? (
+								navItems.map(item => (
+									<Button
+										style={{color: "black", padding: "0 1.3rem"}}
+										key={item.menu}
+									>
+										<AnchorLink href={item.link}>
+											{item.menu}
+										</AnchorLink>
+									</Button>
+								))
+							) : (
 								<Button
 									style={{color: "black", padding: "0 1.3rem"}}
-									key={item.menu}
 								>
-									<AnchorLink href={item.link}>{item.menu}</AnchorLink>
+									<Link href="/">Back To Home</Link>
 								</Button>
-							))}
+							)}
 						</Box>
 						<Box sx={{display: {xs: "none", md: "block"}}}>
 							<ThemeSwitch />

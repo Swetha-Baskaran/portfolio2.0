@@ -30,6 +30,9 @@
                 width: 100%;
                 border: 1px solid #6426d4;
                 margin: 0.5rem 0;
+                a{
+                    padding: 0.9rem 0;
+                }
                 .icon{
                     color: #6426d4;
                     font-size: 1.5rem;
@@ -54,6 +57,10 @@
             margin-top: 1rem;
             background-color: #5000ca;
             border-radius: 20px 0 20px 0;
+            cursor: pointer;
+            &:disabled{
+                background-color: #5100ca3f;
+            }
 		}
 	}
 }

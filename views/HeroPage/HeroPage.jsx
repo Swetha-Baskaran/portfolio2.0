@@ -1,10 +1,17 @@
 import classes from "./style.module.scss";
-import { Button } from "@mui/material";
+import {Button} from "@mui/material";
+import {useContext} from "react";
+import {ThemeContext} from "../../pages/_app";
 
 const HeroPage = () => {
+	const [lightMode, setLightMode] = useContext(ThemeContext);
 	return (
 		<>
-			<div className={classes["header"]} id="Home">
+			<div
+				className={classes["header"]}
+				id='Home'
+				style={{background: lightMode && "black"}}
+			>
 				<video autoPlay muted loop className={classes["myVideo"]}>
 					<source src='assets/videos/mobilevideo.mp4' type='video/mp4' />
 				</video>
@@ -44,16 +51,23 @@ const HeroPage = () => {
 							meet you.
 						</p>
 						<div className={classes["learn-more-hold"]}>
-							<Button className={classes["learn-more"]}>
+							<Button
+								className={classes["learn-more"]}
+								href='https://drive.google.com/file/d/1t7K2J4caWvwkfKSn7eX0b2IYsrrncavw/view?usp=share_link'
+							>
 								Download CV
 							</Button>
-							<Button className={classes["learn-more"]} href="#Projects">
+							<Button className={classes["learn-more"]} href='#Projects'>
 								View Projects
 							</Button>
 						</div>
 					</section>
 					<div className={classes["heroImg-hold"]}>
-						<img className={classes["image"]} alt="" src='/assets/developer.png' />
+						<img
+							className={classes["image"]}
+							alt=''
+							src='/assets/developer.png'
+						/>
 					</div>
 				</div>
 			</div>

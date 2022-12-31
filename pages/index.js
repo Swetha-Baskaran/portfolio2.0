@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import {useEffect} from "react";
 import Head from "next/head";
 import Footer from "../components/Footer";
 import AboutMe from "../views/about/AboutMe";
@@ -24,15 +24,15 @@ export default function Home() {
 				<link rel='icon' href='/favicon.jpg' />
 			</Head>
 			<main className='main'>
-				<Navbar />
-				<HeroPage />
-				<div className='section'>
-					<AboutMe />
-					<Services />
-					<Projects />
-					<Contacts />
-					<Footer />
-				</div>
+					<Navbar />
+					<HeroPage />
+					<div className='section'>
+						<AboutMe />
+						<Services />
+						<Projects />
+						<Contacts />
+						<Footer />
+					</div>
 			</main>
 		</div>
 	);

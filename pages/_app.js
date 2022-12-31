@@ -1,7 +1,14 @@
-import '../styles/globals.css'
+import {createContext, useState} from "react";
+import "../styles/globals.css";
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+export const ThemeContext = createContext();
+function MyApp({Component, pageProps}) {
+  const [lightMode, setLightMode] = useState(true);
+	return (
+		<ThemeContext.Provider value={[lightMode, setLightMode]}>
+			<Component {...pageProps} />
+		</ThemeContext.Provider>
+	);
 }
 
-export default MyApp
+export default MyApp;

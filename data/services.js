@@ -6,13 +6,7 @@ export const services = [
         from 45 BC, making it over 2000 years old.`,
     },
     {
-        service: "UI/UX Design",
-        description: `Contrary to popular belief, Lorem Ipsum is not simply random
-        text. It has roots in a piece of classical Latin literature
-        from 45 BC, making it over 2000 years old.`,
-    },
-    {
-        service: "Api Development",
+        service: "UI Design",
         description: `Contrary to popular belief, Lorem Ipsum is not simply random
         text. It has roots in a piece of classical Latin literature
         from 45 BC, making it over 2000 years old.`,

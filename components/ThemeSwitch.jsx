@@ -3,13 +3,14 @@ import { styled } from '@mui/material/styles';
 import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Switch from '@mui/material/Switch';
+import { useContext } from 'react';
+import { ThemeContext } from '../pages/_app';
 
 const MaterialUISwitch = styled(Switch)(({ theme }) => ({
   width: 62,
   height: 34,
   padding: 7,
   '& .MuiSwitch-switchBase': {
-    // margin: 1,
     padding: 0,
     transform: 'translateX(6px)',
     '&.Mui-checked': {
@@ -52,9 +53,11 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
 }));
 
 export default function CustomizedSwitches() {
+  const [lightMode, setLightMode] = useContext(ThemeContext)
   return (
     <FormGroup>
       <FormControlLabel style={{margin: 0}}
+        onChange={()=> setLightMode(!lightMode)}
         control={<MaterialUISwitch defaultChecked />}
       />
     </FormGroup>
