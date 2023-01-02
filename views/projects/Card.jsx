@@ -1,20 +1,17 @@
 import Card from "@mui/material/Card";
-import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
-import CardActions from "@mui/material/CardActions";
-import IconButton from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography";
-import {RiCodeSSlashFill, RiExternalLinkFill} from "react-icons/ri";
+import { RiExternalLinkFill } from "react-icons/ri";
 import {FiGithub} from "react-icons/fi";
 import classes from "./style.module.scss";
 import Image from "next/image";
+import Link from "next/link";
 
 const IndividualProject = ({handleOpen, data}) => {
 	return (
 		<Card
 			data-aos='fade-down'
 			onClick={handleOpen}
-			sx={{maxWidth: 360}}
+			sx={{width: 360}}
 			className={classes["individual-card"]}
 			style={customStyle.individualCard}
 		>
@@ -27,8 +24,12 @@ const IndividualProject = ({handleOpen, data}) => {
 					style={{padding: "0 1rem"}}
 				/>
 				<div className={classes["link-btns"]}>
-					<FiGithub className={classes["btns"]} />
-					<RiExternalLinkFill className={classes["btns"]} />
+					<Link href={data.github}>
+						<FiGithub className={classes["btns"]} />
+					</Link>
+					<Link href={data.link}>
+						<RiExternalLinkFill className={classes["btns"]} />
+					</Link>
 				</div>
 			</div>
 			<CardContent className={classes["card-title"]}>

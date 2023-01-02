@@ -28,7 +28,7 @@ export default function Home() {
 					<HeroPage />
 					<div className='section'>
 						<AboutMe />
-						<Services />
+						{/* <Services /> */}
 						<Projects />
 						<Contacts />
 						<Footer />
