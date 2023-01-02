@@ -105,9 +105,9 @@ export default function Navbar(props) {
 					</ListItem>
 				)}
 			</List>
-			<div style={customStyles.switchHold}>
+			{/* <div style={customStyles.switchHold}>
 				<ThemeSwitch sx={{textAlign: "center"}} />
-			</div>
+			</div> */}
 		</Box>
 	);
 
@@ -162,9 +162,9 @@ export default function Navbar(props) {
 								</Button>
 							)}
 						</Box>
-						<Box sx={{display: {xs: "none", md: "block"}}}>
+						{/* <Box sx={{display: {xs: "none", md: "block"}}}>
 							<ThemeSwitch />
-						</Box>
+						</Box> */}
 						<IconButton
 							color='inherit'
 							aria-label='open drawer'

@@ -10,7 +10,6 @@ const HeroPage = () => {
 			<div
 				className={classes["header"]}
 				id='Home'
-				style={{background: lightMode && "black"}}
 			>
 				<video autoPlay muted loop className={classes["myVideo"]}>
 					<source src='assets/videos/mobilevideo.mp4' type='video/mp4' />
