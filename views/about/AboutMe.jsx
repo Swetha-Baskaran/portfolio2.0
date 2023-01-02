@@ -1,37 +1,37 @@
 import classes from "./style.module.scss";
-import { RiCodeSSlashFill } from "react-icons/ri";
-import { FaUniversity } from "react-icons/fa";
-import { BsGraphUp } from "react-icons/bs";
+import {RiCodeSSlashFill} from "react-icons/ri";
+import {FaUniversity} from "react-icons/fa";
+import {BsGraphUp} from "react-icons/bs";
 import Skills from "../skills/Skills";
-import { Button } from "@mui/material";
+import {Button} from "@mui/material";
 import Title from "../../components/Titles";
 
 const AboutMe = () => {
 	return (
 		<>
-			<div className={classes["about-hold"]} id="About">
+			<div className={classes["about-hold"]} id='About'>
 				<div className={classes["about-me"]}>
 					<div className={classes["about-heading"]} data-aos='fade-down'>
 						Bit about me
 					</div>
 					<p
 						data-aos='fade-down'
-						className={
-							classes["about-content"]
-						}>{`I'm Swetha Baskaran, a Frontend Developer. `}</p>
-					<p  data-aos="fade-down" className={classes["about-content"]}>
-						{`I was passionated on
+						className={classes["about-content"]}
+					>{`I'm Swetha Baskaran, a Frontend Developer. `}</p>
+					<p data-aos='fade-down' className={classes["about-content"]}>
+						{`I'm passionated on
 					programming and having the ability to solve problems. I started
-					coding at my age of 17 and I was completely addicted to it. I
-					wished to become a own stuff full stack web developer within a
-					short while as I was working for that. I'm an optimistic person
-					aspiring to become a tech entrepreneur. I was intrested in
-					blockchain and web3 and also fascinated to learn futuristic
-					technologies. That's all about my short story.I was passionated on
-					programming and having the ability to solve problems.`}
+					coding at my age of 17 and I was completely addicted to it. I'm working as a Frontend Dev in a startup, 
+					where I'm enjoing to build and work on their product.`}
+					</p>
+					<p data-aos='fade-down' className={classes["about-content"]}>
+						{`I'm an optimistic person
+					aspiring to become a tech entrepreneur. And intrested in
+					Devops and also fascinated to learn futuristic
+					technologies.`}
 					</p>
 				</div>
-				<div  data-aos="fade-down" className={classes["qualification"]}>
+				<div data-aos='fade-down' className={classes["qualification"]}>
 					<img
 						src='/assets/me.png'
 						alt=''
@@ -41,22 +41,22 @@ const AboutMe = () => {
 					/>
 				</div>
 			</div>
-			<div className={classes["about-hold"]} id="Skills">
+			<div className={classes["about-hold"]} id='Skills'>
 				<div className={classes["about-me"]}>
-					<div  data-aos="fade-down" className={classes["about-heading"]}>
+					<div data-aos='fade-down' className={classes["about-heading"]}>
 						What I’m Made Of .
 					</div>
 					<Skills />
 				</div>
 				<div className={classes["qualification"]}>
-					<div  data-aos="fade-down" className={classes["description"]}>
+					<div data-aos='fade-down' className={classes["description"]}>
 						<RiCodeSSlashFill className={classes["icon"]} />
 						<div className={classes["content"]}>
 							<h2>Software Engineer Intern</h2>
 							<p>Coginved Solutions, LLp</p>
 						</div>
 					</div>
-					<div  data-aos="fade-down" className={classes["description"]}>
+					<div data-aos='fade-down' className={classes["description"]}>
 						<FaUniversity className={classes["icon"]} />
 						<div className={classes["content"]}>
 							<h2>B.Tech Student</h2>
@@ -64,7 +64,7 @@ const AboutMe = () => {
 							<p>Puducherry Technological Univesity</p>
 						</div>
 					</div>
-					<div  data-aos="fade-down" className={classes["description"]}>
+					<div data-aos='fade-down' className={classes["description"]}>
 						<BsGraphUp className={classes["icon"]} />
 						<div className={classes["content"]}>
 							<h2>Intrested in</h2>

@@ -26,7 +26,7 @@ export const ProjectUrl = [
         github: "https://github.com/Swetha-Baskaran/Gatsby-Hospital-Landing-page",
         link: "https://gatsby-hospital-landing-page.netlify.app/",
         img: `/assets/projects/proj3.png`,
-        technologies: ["Gatsby JS", "css", "Material-UI"],
+        technologies: ["Gatsby JS", "Material-UI"],
         details: "dfdkfdf"
     },    
     {
@@ -56,7 +56,7 @@ export const ProjectUrl = [
         github: "https://github.com/Swetha-Baskaran/redux-todo-app",
         link: "https://task-app-swethabaskaran.netlify.app/",
         img: `/assets/projects/proj5.png`,
-        technologies: ["React Js", "Redux", "Tailwind Css"],
+        technologies: ["React Js", "Redux"],
         details: "dfdkfdf"
     },    
     {
@@ -186,7 +186,7 @@ export const ProjectUrl = [
         github: "https://github.com/Swetha-Baskaran/tringle_match_on_slidermove",
         link: "https://swetha-baskaran.github.io/tringle_match_on_slidermove/",
         img: ``,
-        technologies: ["Next Js", "Scss", "Context API"],
+        technologies: ["Next Js", "MUI", "Context API"],
         details: "dfdkfdf"
     },    
 ]
