@@ -52,7 +52,7 @@ const HeroPage = () => {
 						<div className={classes["learn-more-hold"]}>
 							<Button
 								className={classes["learn-more"]}
-								href='https://drive.google.com/file/d/1t7K2J4caWvwkfKSn7eX0b2IYsrrncavw/view?usp=share_link'
+								href='https://drive.google.com/file/d/1ngdEfUN218fo2oPD2Tl8W7csXnyj0C7j/view?usp=sharing'
 							>
 								Download CV
 							</Button>

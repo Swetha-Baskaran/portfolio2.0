@@ -135,6 +135,7 @@ export default function Navbar(props) {
 								flexGrow: 1,
 								display: {md: "block"},
 								color: "black",
+								cursor: "pointer",
 							}}
 							onClick={() => {
 								Router.push("/");
@@ -155,10 +156,8 @@ export default function Navbar(props) {
 									</Button>
 								))
 							) : (
-								<Button
-									style={{color: "black", padding: "0 1.3rem"}}
-								>
-									<Link href="/">Back To Home</Link>
+								<Button style={{color: "black", padding: "0 1.3rem"}}>
+									<Link href='/'>Back To Home</Link>
 								</Button>
 							)}
 						</Box>
