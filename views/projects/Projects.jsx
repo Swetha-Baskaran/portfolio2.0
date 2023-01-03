@@ -1,5 +1,3 @@
-import {useState} from "react";
-import Pagination from "@mui/material/Pagination";
 import IndividualProject from "./Card";
 import classes from "./style.module.scss";
 import Grid from "@mui/material/Grid";

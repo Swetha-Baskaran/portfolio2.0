@@ -179,22 +179,22 @@ export const ProjectUrl = [
         technologies: ["html", "css", "js"],
         details: "Javascript Challenge accepted - 2021"
     },    
-    {
-        name: "Calculator",
-        project_no: "12",
-        group: "1",
-        github: "https://github.com/Swetha-Baskaran/tic_toc_too",
-        link: "https://swetha-baskaran.github.io/tic_toc_too/",
-        img: `/assets/projects/proj20.png`,
-        technologies: ["html", "css", "js"],
-        details: "Javascript Challenge accepted - 2021 (Windows10 UI theme)"
-    },    
+    // {
+    //     name: "Calculator",
+    //     project_no: "12",
+    //     group: "1",
+    //     github: "https://github.com/Swetha-Baskaran/tic_toc_too",
+    //     link: "https://swetha-baskaran.github.io/tic_toc_too/",
+    //     img: `/assets/projects/proj20.png`,
+    //     technologies: ["html", "css", "js"],
+    //     details: "Javascript Challenge accepted - 2021 (Windows10 UI theme)"
+    // },    
     {
         name: "About This App",
         project_no: "12",
         group: "1",
-        github: "https://github.com/Swetha-Baskaran/tringle_match_on_slidermove",
-        link: "https://swetha-baskaran.github.io/tringle_match_on_slidermove/",
+        github: "https://github.com/Swetha-Baskaran/portfolio2.0",
+        link: "https://swethabaskaran.netlify.app/",
         img: `/assets/projects/proj21.png`,
         technologies: ["Next Js", "MUI", "Context API"],
         details: "This is to visualize my skills and abilities made out of Next Js."
