@@ -3,8 +3,6 @@ import {RiCodeSSlashFill} from "react-icons/ri";
 import {FaUniversity} from "react-icons/fa";
 import {BsGraphUp} from "react-icons/bs";
 import Skills from "../skills/Skills";
-import {Button} from "@mui/material";
-import Title from "../../components/Titles";
 
 const AboutMe = () => {
 	return (
@@ -17,7 +15,7 @@ const AboutMe = () => {
 					<p
 						data-aos='fade-down'
 						className={classes["about-content"]}
-					>{`I'm Swetha Baskaran, a Frontend Developer. `}</p>
+					>{`I'm Swetha Baskaran, a Fullstack Developer. `}</p>
 					<p data-aos='fade-down' className={classes["about-content"]}>
 						{`I'm passionated on
 					programming and having the ability to solve problems. I started
@@ -52,8 +50,15 @@ const AboutMe = () => {
 					<div data-aos='fade-down' className={classes["description"]}>
 						<RiCodeSSlashFill className={classes["icon"]} />
 						<div className={classes["content"]}>
-							<h2>Software Engineer Intern</h2>
-							<p>Coginved Solutions, LLp</p>
+							<h2>Work : Freelancer</h2>
+							<p>Self Employed</p>
+						</div>
+					</div>
+					<div data-aos='fade-down' className={classes["description"]}>
+						<FaUniversity className={classes["icon"]} />
+						<div className={classes["content"]}>
+							<h2>Teaching</h2>
+							<p>Frontend Technologies</p>
 						</div>
 					</div>
 					<div data-aos='fade-down' className={classes["description"]}>

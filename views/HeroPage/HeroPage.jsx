@@ -7,10 +7,7 @@ const HeroPage = () => {
 	const [lightMode, setLightMode] = useContext(ThemeContext);
 	return (
 		<>
-			<div
-				className={classes["header"]}
-				id='Home'
-			>
+			<div className={classes["header"]} id='Home'>
 				<video autoPlay muted loop className={classes["myVideo"]}>
 					<source src='assets/videos/mobilevideo.mp4' type='video/mp4' />
 				</video>
@@ -52,7 +49,7 @@ const HeroPage = () => {
 						<div className={classes["learn-more-hold"]}>
 							<Button
 								className={classes["learn-more"]}
-								href='https://drive.google.com/file/d/1ngdEfUN218fo2oPD2Tl8W7csXnyj0C7j/view?usp=sharing'
+								href='https://drive.google.com/file/d/163O-PQigR8M90tyv1fAdGxvRQL_EDl9Q/view?usp=sharing'
 							>
 								Download CV
 							</Button>
