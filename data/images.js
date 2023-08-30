@@ -12,7 +12,11 @@ export const SkillsData = [
         progress: "85",
     },
     {
-        name: "Javascript",
+        name: "Typescript",
+        progress: "90",
+    },
+    {
+        name: "AWS",
         progress: "90",
     },
     {

@@ -43,13 +43,14 @@ const HeroPage = () => {
 							<span className={classes["m"]}>R</span>
 						</h3>
 						<p className={classes["p"]}>
-							I like to design and code user-friendly websites. Nice to
-							meet you.
+							I like to design and code user-friendly websites and
+							provide software solutions for you requirements. Nice to meet
+							you.
 						</p>
 						<div className={classes["learn-more-hold"]}>
 							<Button
 								className={classes["learn-more"]}
-								href='https://drive.google.com/file/d/163O-PQigR8M90tyv1fAdGxvRQL_EDl9Q/view?usp=sharing'
+								href='https://drive.google.com/file/d/1mfEMKWvvHmkT3DTA9_Oo90fB0XQWz6o1/view?usp=drive_link'
 							>
 								Download CV
 							</Button>

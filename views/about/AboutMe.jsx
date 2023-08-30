@@ -73,7 +73,7 @@ const AboutMe = () => {
 						<BsGraphUp className={classes["icon"]} />
 						<div className={classes["content"]}>
 							<h2>Intrested in</h2>
-							<p>DevOps</p>
+							<p>AI, DevOps</p>
 						</div>
 					</div>
 				</div>

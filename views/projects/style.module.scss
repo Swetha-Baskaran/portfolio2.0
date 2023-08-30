@@ -22,10 +22,13 @@
 }
 
 .individual-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	cursor: pointer;
 	.card-title{
 		font-size: 1.5rem;
-		padding: 0rem 1rem 0.2rem 1.1rem;
+		padding: 1rem 1rem 0.2rem 1.1rem;
 	}
 	.card-img-hold {
 		position: relative;
@@ -34,7 +37,7 @@
 		.card-img {
 			height: 100%;
 			width: 100%;
-			padding: 0 1rem !important;
+			padding: 0 0rem !important;
 		}
 		.link-btns {
 			position: absolute;

@@ -8,18 +8,37 @@ export const ProjectUrl = [
 		img: `/assets/projects/codepen.png`,
 		technologies: ["Vite Js", "MUI", "Codemirror"],
 		details:
-			"Developed a CodePen clone using React.js, Material-UI, and the CodeMirror API. Implemented live code editing  for HTML, CSS, and JavaScript snippets.",
+			"Dynamic CodePen replica, empowering users to engage in real-time code editing across HTML, CSS, and JavaScript, enabling seamless experimentation and learning in one platform.",
 	},
 	{
-		name: "MERN - Sticky Notes App",
+		name: "Skillerate Blue",
 		project_no: "1",
 		group: "1",
-		github: "https://github.com/Swetha-Baskaran/MERN_sticky_notes",
-		link: "https://sticky-notes-phi.vercel.app/",
-		img: `/assets/projects/mernSticky.png`,
-		technologies: ["React", "MERN", "Docker"],
+		link: "https://blue.skillerate.in/",
+		img: `/assets/projects/skillerateBlue.png`,
+		technologies: ["React", "Typescript", "AWS"],
 		details:
-			"Developed a fully functional MERN stack sticky notes app. And used the Redux toolkit for state management.",
+			"Landing page for Skillerate.in - Edtech company where we teach, mentor students and prepare them for the industry",
+	},
+	{
+		name: "Talkgram",
+		project_no: "1",
+		group: "1",
+		link: "https://talkgram.in/",
+		img: `/assets/projects/talkgram.png`,
+		technologies: ["React", "Typescript"],
+		details:
+			"Online English learning platform, a comprehensive and interactive tool designed to help you master the English language with ease and confidence.",
+	},
+	{
+		name: "Skillerate Student",
+		project_no: "1",
+		group: "1",
+		link: "https://www.skillerate.in/",
+		img: `/assets/projects/skillerateWhite.png`,
+		technologies: ["React", "Typescript"],
+		details:
+			"Built this product - The only company in India that pays you to learn. Get paid to Upskill. Crafting Excellence with Best Projects - Empower, Innovate, Achieve.",
 	},
 	{
 		name: "University website",
@@ -43,17 +62,6 @@ export const ProjectUrl = [
 		details: "Open-AI powered chat bot using React Native.",
 	},
 	{
-		name: "Task List App",
-		project_no: "5",
-		group: "1",
-		github: "https://github.com/Swetha-Baskaran/redux-todo-app",
-		link: "https://task-app-swethabaskaran.netlify.app/",
-		img: `/assets/projects/proj6.png`,
-		technologies: ["React Js", "Redux"],
-		details:
-			"Todo list app made using redux-toolkit. By which we can prioritize our daily tasks to our ease.",
-	},
-	{
 		name: "Hospital-Landing-page",
 		project_no: "3",
 		group: "1",
@@ -63,6 +71,50 @@ export const ProjectUrl = [
 		technologies: ["Gatsby JS", "Material-UI"],
 		details:
 			"Got inspired by the UI and Made using javascript static site generator to experience.",
+	},
+	{
+		name: "MERN - Sticky Notes App",
+		project_no: "1",
+		group: "1",
+		github: "https://github.com/Swetha-Baskaran/MERN_sticky_notes",
+		link: "https://sticky-notes-phi.vercel.app/",
+		img: `/assets/projects/mernSticky.png`,
+		technologies: ["React", "MERN", "Docker"],
+		details:
+			"Developed a fully functional MERN stack sticky notes app. And used the Redux toolkit for state management.",
+	},
+	{
+		name: "SEO Scraper",
+		project_no: "3",
+		group: "1",
+		github: "https://github.com/Swetha-Baskaran/flask-SEO-scraper",
+		link: "https://github.com/Swetha-Baskaran/flask-SEO-scraper",
+		img: `/assets/projects/scraper.png`,
+		technologies: ["Flask", "Python"],
+		details:
+			"The project provides valuable insights into the SEO performance of websites and helps in identifying areas for improvement.",
+	},
+	{
+		name: "Digital Invitation",
+		project_no: "4",
+		group: "1",
+		github: "https://github.com/Swetha-Baskaran/digital-card-tailwind",
+		link: "https://swetha-baskaran.github.io/digital-card-tailwind/",
+		img: `/assets/projects/proj3.png`,
+		technologies: ["React Js", "Tailwind Css"],
+		details:
+			"Challenge - A wedding invitation out of React Js and tailwind css.",
+	},
+	{
+		name: "Task List App",
+		project_no: "5",
+		group: "1",
+		github: "https://github.com/Swetha-Baskaran/redux-todo-app",
+		link: "https://task-app-swethabaskaran.netlify.app/",
+		img: `/assets/projects/proj6.png`,
+		technologies: ["React Js", "Redux"],
+		details:
+			"Todo list app made using redux-toolkit. By which we can prioritize our daily tasks to our ease.",
 	},
 	{
 		name: "kawa-space-react-challenge",

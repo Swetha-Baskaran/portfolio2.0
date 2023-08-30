@@ -1,6 +1,6 @@
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
-import { RiExternalLinkFill } from "react-icons/ri";
+import {RiExternalLinkFill} from "react-icons/ri";
 import {FiGithub} from "react-icons/fi";
 import classes from "./style.module.scss";
 import Image from "next/image";
@@ -15,27 +15,31 @@ const IndividualProject = ({handleOpen, data}) => {
 			className={classes["individual-card"]}
 			style={customStyle.individualCard}
 		>
-			<div className={classes["card-img-hold"]}>
-				<Image
-					src={data.img}
-					alt=''
-					className={classes["card-img"]}
-					layout='fill'
-					style={{padding: "0 1rem"}}
-				/>
-				<div className={classes["link-btns"]}>
-					<Link href={data.github}>
-						<FiGithub className={classes["btns"]} />
-					</Link>
-					<Link href={data.link}>
-						<RiExternalLinkFill className={classes["btns"]} />
-					</Link>
+			<div>
+				<div className={classes["card-img-hold"]}>
+					<Image
+						src={data.img}
+						alt=''
+						className={classes["card-img"]}
+						layout='fill'
+						style={{padding: "0 1rem"}}
+					/>
+					<div className={classes["link-btns"]}>
+						{data?.github && (
+							<Link href={data?.github}>
+								<FiGithub className={classes["btns"]} />
+							</Link>
+						)}
+						<Link href={data.link}>
+							<RiExternalLinkFill className={classes["btns"]} />
+						</Link>
+					</div>
 				</div>
+				<CardContent className={classes["card-title"]}>
+					{data.name}
+				</CardContent>
+				<CardContent>{data.details}</CardContent>
 			</div>
-			<CardContent className={classes["card-title"]}>
-				{data.name}
-			</CardContent>
-			<CardContent>{data.details}</CardContent>
 			<CardContent className={classes["card-skills"]}>
 				{data.technologies.map((e, index) => {
 					return (
