@@ -1,5 +1,8 @@
 # Welcome to Portfolio2.0, 
-A dynamic representation of my professional odyssey. This repository captures my evolution, aspirations, and accomplishments, embodying the spirit of constant growth. Through code, projects, and endeavors, I present a digital narrative that reflects my commitment to innovation and learning. Join me on this coding expedition, where every commit contributes to the saga of my technological voyage."
+A dynamic representation of my professional odyssey. This repository captures my evolution, aspirations, and accomplishments, embodying the spirit of constant growth. Through code, projects, and endeavors, I present a digital narrative that reflects my commitment to innovation and learning. Join me on this coding expedition, where every commit contributes to the saga of my technological voyage.
+
+![image](https://github.com/Swetha-Baskaran/portfolio2.0/assets/74134426/636365f4-c9ba-473b-9319-46201c68d4e9)
+
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
