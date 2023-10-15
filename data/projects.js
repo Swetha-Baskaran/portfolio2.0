@@ -11,6 +11,16 @@ export const ProjectUrl = [
 			"Dynamic CodePen replica, empowering users to engage in real-time code editing across HTML, CSS, and JavaScript, enabling seamless experimentation and learning in one platform.",
 	},
 	{
+		name: "DayOne by Learnduke.com",
+		project_no: "1",
+		group: "1",
+		link: "https://dayone-learnduke.netlify.app/",
+		img: `/assets/projects/dayone.png`,
+		technologies: ["React", "MUI", "Tailwind CSS"],
+		details:
+			"Online Learning platform by Learnduke.com. We make learning easy and enjoyable anywhere from the world.",
+	},
+	{
 		name: "Skillerate Blue",
 		project_no: "1",
 		group: "1",
