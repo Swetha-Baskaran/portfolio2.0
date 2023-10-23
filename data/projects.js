@@ -21,16 +21,6 @@ export const ProjectUrl = [
 			"Online Learning platform by Learnduke.com. We make learning easy and enjoyable anywhere from the world.",
 	},
 	{
-		name: "Skillerate Blue",
-		project_no: "1",
-		group: "1",
-		link: "https://blue.skillerate.in/",
-		img: `/assets/projects/skillerateBlue.png`,
-		technologies: ["React", "Typescript", "AWS"],
-		details:
-			"Landing page for Skillerate.in - Edtech company where we teach, mentor students and prepare them for the industry",
-	},
-	{
 		name: "Talkgram",
 		project_no: "1",
 		group: "1",
@@ -39,6 +29,26 @@ export const ProjectUrl = [
 		technologies: ["React", "Typescript"],
 		details:
 			"Online English learning platform, a comprehensive and interactive tool designed to help you master the English language with ease and confidence.",
+	},
+	{
+		name: "Shiva's Services",
+		project_no: "1",
+		group: "1",
+		link: "https://services.shivasacademy.com/",
+		img: `/assets/projects/shivasServices.png`,
+		technologies: ["Vite Js", "MUI", "Tailwind"],
+		details:
+			"Shiva's Signature Salon: 35+ years of beauty excellence. 23 Mumbai outlets. Hair, skin, makeup, quality, stars. Your beauty journey starts here.",
+	},
+	{
+		name: "Skillerate Blue",
+		project_no: "1",
+		group: "1",
+		link: "https://blue.skillerate.in/",
+		img: `/assets/projects/skillerateBlue.png`,
+		technologies: ["React", "Typescript", "AWS"],
+		details:
+			"Landing page for Skillerate.in - Edtech company where we teach, mentor students and prepare them for the industry",
 	},
 	{
 		name: "Skillerate Student",
@@ -136,17 +146,6 @@ export const ProjectUrl = [
 		technologies: ["React Js", "Axios", "Scss"],
 		details:
 			"Challenge - A simple users app with an API integrated using AXIOS framework.",
-	},
-	{
-		name: "SEO Scraper",
-		project_no: "3",
-		group: "1",
-		github: "https://github.com/Swetha-Baskaran/flask-SEO-scraper",
-		link: "https://github.com/Swetha-Baskaran/flask-SEO-scraper",
-		img: `/assets/projects/scraper.png`,
-		technologies: ["Flask", "Python"],
-		details:
-			"The project provides valuable insights into the SEO performance of websites and helps in identifying areas for improvement.",
 	},
 	{
 		name: "Digital Invitation",
