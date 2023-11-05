@@ -16,7 +16,7 @@ export const ProjectUrl = [
 		group: "1",
 		link: "https://www.kankariyasupermarket.in",
 		img: `/assets/projects/kankariya.png`,
-		technologies: ["Vite Js", "MUI", "Codemirror"],
+		technologies: ["AWS", "Vite Js", "Node Js", "Mongo DB"],
 		details:
 			"Your Ultimate Online Supermarket: Streamlining All Your Household Needs with Seamless Ordering. Discover the convenience of one-click shopping for all your daily essentials.",
 	},
