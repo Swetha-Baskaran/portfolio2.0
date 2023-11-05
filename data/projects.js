@@ -11,6 +11,16 @@ export const ProjectUrl = [
 			"Dynamic CodePen replica, empowering users to engage in real-time code editing across HTML, CSS, and JavaScript, enabling seamless experimentation and learning in one platform.",
 	},
 	{
+		name: "Kankariya Online Supermarket",
+		project_no: "1",
+		group: "1",
+		link: "https://www.kankariyasupermarket.in",
+		img: `/assets/projects/kankariya.png`,
+		technologies: ["Vite Js", "MUI", "Codemirror"],
+		details:
+			"Your Ultimate Online Supermarket: Streamlining All Your Household Needs with Seamless Ordering. Discover the convenience of one-click shopping for all your daily essentials.",
+	},
+	{
 		name: "DayOne by Learnduke.com",
 		project_no: "1",
 		group: "1",
@@ -146,17 +156,6 @@ export const ProjectUrl = [
 		technologies: ["React Js", "Axios", "Scss"],
 		details:
 			"Challenge - A simple users app with an API integrated using AXIOS framework.",
-	},
-	{
-		name: "Digital Invitation",
-		project_no: "4",
-		group: "1",
-		github: "https://github.com/Swetha-Baskaran/digital-card-tailwind",
-		link: "https://swetha-baskaran.github.io/digital-card-tailwind/",
-		img: `/assets/projects/proj3.png`,
-		technologies: ["React Js", "Tailwind Css"],
-		details:
-			"Challenge - A wedding invitation out of React Js and tailwind css.",
 	},
 	{
 		name: "Survey Form",
