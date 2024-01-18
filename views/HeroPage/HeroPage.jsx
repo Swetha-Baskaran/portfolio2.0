@@ -50,7 +50,7 @@ const HeroPage = () => {
 						<div className={classes["learn-more-hold"]}>
 							<Button
 								className={classes["learn-more"]}
-								href='https://drive.google.com/file/d/1mfEMKWvvHmkT3DTA9_Oo90fB0XQWz6o1/view?usp=drive_link'
+								href='https://drive.google.com/file/d/1afQA4Y8if79pRvQETTasBj0oAObfCpJF/view?usp=sharing'
 							>
 								Download CV
 							</Button>
